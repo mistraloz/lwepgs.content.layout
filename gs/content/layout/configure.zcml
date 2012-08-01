@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configure xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:rdb="http://namespaces.zope.org/rdb"
+  xmlns:sqlos="http://namespaces.sqlobject.org/sqlos"
+  xmlns:five="http://namespaces.zope.org/five">
+
+  <browser:page 
+    for="*"
+    template="browser/templates/menu_layout.pt"
+    name="groupserver_layout" 
+    permission="zope.Public" />
+  <browser:page 
+    for="*"
+    template="browser/templates/menu_layout.pt"
+    name="groupserver_menu_layout" 
+    permission="zope.Public" />
+
+  <browser:page 
+    for="*" 
+    template="browser/templates/fullpage_layout.pt"
+    name="groupserver_site_home_layout" 
+    permission="zope.Public" />
+  <browser:page 
+    for="*" 
+    template="browser/templates/fullpage_layout.pt"
+    name="groupserver_full_page_layout" 
+    permission="zope.Public" />
+
+</configure>
