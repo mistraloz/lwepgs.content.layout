@@ -32,6 +32,8 @@ setup(name='gs.content.layout',
     zip_safe=True,
     install_requires=[
         'setuptools',
+        'zope.tal',
+        'zope.tales',
         # -*- Extra requirements: -*-
     ],
     entry_points="""
