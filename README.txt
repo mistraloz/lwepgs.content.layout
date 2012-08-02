@@ -62,7 +62,6 @@ There are nine slots defined by the two layouts.
   attribute, and the metadata to add is placed inside the block.
 
 ``metal:fill-slot="style"``:
-
   Optional extra style (CSS) information for the page. Normally a
   ``<style>`` element has the ``fill-slot`` macro. When rendered the style
   slot appears after the standard GroupServer CSS [#css]_, so the page can
@@ -185,8 +184,8 @@ either a ``<div>`` or ``<tal:block>`` could also be used. (By using a
 .. [#form] See the ``gs.content.form`` product
            <http://source.iopen.net/groupserver/gs.content.form/>
 
-.. [#jquery] See the ``Products.GSContent`` product
-           <http://source.iopen.net/groupserver/Products.GSContent/>
+.. [#jquery] See the ``gs.content.js.jquery`` product
+           <http://source.iopen.net/groupserver/gs.content.js.jquery/>
 
 .. [#page] See the ``gs.content.base`` product
            <http://source.iopen.net/groupserver/gs.content.base/>
