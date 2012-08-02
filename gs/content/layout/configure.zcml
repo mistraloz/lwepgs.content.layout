@@ -24,7 +24,7 @@
   <browser:page 
     for="*" 
     template="browser/templates/fullpage_layout.pt"
-    name="groupserver_full_page_layout" 
+    name="groupserver_full_layout" 
     permission="zope.Public" />
 
 </configure>
