@@ -70,30 +70,31 @@
       </div><!--titlebar-->
     </div><!--toparea-->
     <div id="bodyblock">    
-      <div id="divisionHomeContent">
-        <metal:block define-slot="messages">
-          &#160;
-        </metal:block><!--messages-->
-        <metal:block metal:define-slot="pagetitle"/>
-        <div id="notifications" metal:define-slot="notifications"
-          tal:define="notifications context/notifications | nothing"
-          tal:condition="notifications">
-          <tal:block 
-            repeat="notification python:notifications.objectValues()">
-            <p tal:replace="structure python:notification(method='html')">
-              You Maniacs! 
-              You blew it up! 
-              Ah, <strong>damn you!</strong>
-              God damn you all to <strong>Hell!</strong>
-            </p>
-          </tal:block>
-        </div><!--notifications-->
-        <metal:block define-slot="body" />   
-        <div class="noFloat">&#160;</div>
-        <!--Footer-->
-        <metal:block metal:define-slot="footer"
-          tal:content="structure python:getattr(context, 'footerlinks.xml', getattr(context.Templates.output, 'footerlinks.xml'))(method='html')" />
-      </div><!--content-->
+      <div id="breadcrumbs">
+        <metal:block define-slot="breadcrumb">&#160;</metal:block>
+      </div><!--breadcrumbs-->
+      <metal:block define-slot="messages">
+        &#160;
+      </metal:block><!--messages-->
+      <metal:block metal:define-slot="pagetitle"/>
+      <div id="notifications" metal:define-slot="notifications"
+           tal:define="notifications context/notifications | nothing"
+           tal:condition="notifications">
+        <tal:block 
+          repeat="notification python:notifications.objectValues()">
+          <p tal:replace="structure python:notification(method='html')">
+            You Maniacs! 
+            You blew it up! 
+            Ah, <strong>damn you!</strong>
+            God damn you all to <strong>Hell!</strong>
+          </p>
+        </tal:block>
+      </div><!--notifications-->
+      <metal:block define-slot="body" />   
+      <div class="noFloat">&#160;</div>
+      <!--Footer-->
+      <metal:block metal:define-slot="footer"
+                   tal:content="structure python:getattr(context, 'footerlinks.xml', getattr(context.Templates.output, 'footerlinks.xml'))(method='html')" />
     </div><!--bodyblock-->
     <script type="text/javascript" 
       src="/++resource++jquery-1.4.4.min.js">&#160;</script>
