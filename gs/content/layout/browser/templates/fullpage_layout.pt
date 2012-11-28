@@ -42,36 +42,32 @@
   <body tal:define="siteName view/siteInfo/name | nothing"
     tal:attributes="id python:'page-%s' % request.URLPATH1.strip('/').replace('/','_');">
     <div id="toparea">
-      <div id="titlebanner">
-        <div id="titlebar">
-          <a href="/"><span class="logo">&#160;</span>
-            <span class="group">&#160;</span>
-            <span class="division" tal:content="siteName">Site Name</span></a>
-        </div><!--titlebar-->
-      </div><!--titlebanner-->
-      <ul id="utilitylinks" metal:define-slot="utilitylinks" 
-          tal:define="userId user/getId;">
-        <li id="utilitylinks-log-in" tal:condition="not:userId">
-          <a id="utilitylinks-log-in-link" href="/login.html"
-             tal:attributes="href url;"
-             tal:define="url string:/login.html?came_from=${request/URLPATH0};"
-             title="Log in here">Sign in</a>
-        </li>
-        <tal:block condition="userId"
-                   define="fn python:user.getProperty('fn','?')">
-          <li id="utilitylinks-profile">
-            <a id="utilitylinks-profile-link" title="View your profile" 
-               href="/p/"><span class="fn" 
-                                tal:content="fn">Your Name</span></a>
+      <div id="titlebar">
+        <a href="/"><span class="logo">&#160;</span>
+        <span class="site" tal:content="siteName">Site Name</span></a>
+        <ul id="utilitylinks" metal:define-slot="utilitylinks" 
+            tal:define="userId user/getId;">
+          <li id="utilitylinks-log-in" tal:condition="not:userId">
+            <a id="utilitylinks-log-in-link" href="/login.html"
+               tal:attributes="href url;"
+               tal:define="url string:/login.html?came_from=${request/URLPATH0};"
+               title="Log in here">Sign in</a>
           </li>
-          <li class="ui-state-default ui-corner-top"
-              id="utilitylinks-log-out">
-            <a id="utilitylinks-log-out-link"
-               tal:attributes="title string:Log out from ${siteName}"
-               href="/cookie_authentication/logout">Sign out</a>
-          </li>
-        </tal:block>
-      </ul><!--utilitylinks-->
+          <tal:block condition="userId"
+                     define="fn python:user.getProperty('fn','?')">
+            <li id="utilitylinks-profile">
+              <a id="utilitylinks-profile-link" title="View your profile" 
+                 href="/p/"><span class="fn" 
+                                  tal:content="fn">Your Name</span></a>
+            </li>
+            <li id="utilitylinks-log-out">
+              <a id="utilitylinks-log-out-link"
+                 tal:attributes="title string:Log out from ${siteName}"
+                 href="/cookie_authentication/logout">Sign out</a>
+            </li>
+          </tal:block>
+        </ul><!--utilitylinks-->
+      </div><!--titlebar-->
     </div><!--toparea-->
     <div id="bodyblock">    
       <div id="divisionHomeContent">
