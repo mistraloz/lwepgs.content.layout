@@ -42,9 +42,6 @@
   <body tal:define="siteName view/siteInfo/name | nothing"
     tal:attributes="id python:'page-%s' % request.URLPATH1.strip('/').replace('/','_');">
     <div id="toparea">
-      <div id="externalbar" 
-        metal:define-slot="externallinks"
-        tal:content="structure python:getattr(context, 'menuexternal.xml', getattr(context.Templates.output, 'menuexternal.xml'))(method='html')">&#160;</div>
       <div id="titlebanner">
         <div id="titlebar">
           <a href="/"><span class="logo">&#160;</span>
