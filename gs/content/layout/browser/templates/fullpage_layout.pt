@@ -53,15 +53,13 @@
         </div><!--titlebar-->
       </div><!--titlebanner-->
       <div id="mainnav">
-        <div id="utilitylinks" class="tabs ui-tabs ui-widget"
-          metal:define-slot="utilitylinks">
-          <ul tal:define="userId user/getId;"
-            class="ui-tabs-nav ui-helper-reset ui-helper-clearfix">
-            <li tal:condition="not:userId"
-              class="ui-corner-top">
-              <a id="log-in-link" href="/login.html"
-                tal:attributes="href python:('/logout.html' in request.URL or '/login.html' in request.URL) and '/login.html' or '/login.html?came_from=%s' % request.URL"
-                title="Log in here">Log In</a>
+        <div id="utilitylinks" metal:define-slot="utilitylinks">
+          <ul tal:define="userId user/getId;">
+            <li tal:condition="not:userId" id="utilitylinks-log-in">
+              <a id="utilitylinks-log-in-link" href="/login.html"
+                 tal:attributes="href url;"
+                 tal:define="url string:/login.html?came_from=${request/URLPATH0};"
+                 title="Log in here">Sign in</a>
             </li>
             <tal:block condition="userId">
               <li class="ui-state-default ui-corner-top">
