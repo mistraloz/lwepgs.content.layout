@@ -60,7 +60,8 @@
              tal:define="url string:/login.html?came_from=${request/URLPATH0};"
              title="Log in here">Sign in</a>
         </li>
-        <tal:block condition="userId">
+        <tal:block condition="userId"
+                   define="fn python:user.getProperty('fn','?')">
           <li id="utilitylinks-profile">
             <a id="utilitylinks-profile-link" title="View your profile" 
                href="/p/"><span class="fn" 
