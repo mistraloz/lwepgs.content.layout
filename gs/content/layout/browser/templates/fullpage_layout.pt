@@ -52,40 +52,28 @@
             <span class="division" tal:content="siteName">Site Name</span></a>
         </div><!--titlebar-->
       </div><!--titlebanner-->
-      <div id="mainnav">
-        <div id="utilitylinks" metal:define-slot="utilitylinks">
-          <ul tal:define="userId user/getId;">
-            <li tal:condition="not:userId" id="utilitylinks-log-in">
-              <a id="utilitylinks-log-in-link" href="/login.html"
-                 tal:attributes="href url;"
-                 tal:define="url string:/login.html?came_from=${request/URLPATH0};"
-                 title="Log in here">Sign in</a>
-            </li>
-            <tal:block condition="userId">
-              <li class="ui-state-default ui-corner-top">
-                <a id="log-out-link"
-                  tal:attributes="title string:Log out from ${siteName}"
-                    href="/cookie_authentication/logout">Log Out</a>
-              </li>
-              <li  class="ui-corner-top"
-                tal:define="fn python:user.getProperty('fn','?');
-                  nn user/get_canonicalNickname;
-                  url string:/p/${nn};
-                  up1 view/request/URLPATH1;
-                  cur python:up1==url;
-                  c string:ui-state-default ui-corner-top ui-tabs-selected ui-state-active;
-                  nc string:ui-state-default ui-corner-top"
-                tal:attributes="class python:(cur and c) or nc">
-                <a id="profile-link" title="View your profile"
-                  tal:attributes="href url;
-                    class python:(cur and 'current') or 'not-current';">
-                  <span class="fn" tal:content="fn"/>
-                  (profile)</a>
-              </li>
-            </tal:block>
-          </ul>
-        </div><!--utilitylinks-->
-      </div><!--mainnav-->
+      <ul id="utilitylinks" metal:define-slot="utilitylinks" 
+          tal:define="userId user/getId;">
+        <li id="utilitylinks-log-in" tal:condition="not:userId">
+          <a id="utilitylinks-log-in-link" href="/login.html"
+             tal:attributes="href url;"
+             tal:define="url string:/login.html?came_from=${request/URLPATH0};"
+             title="Log in here">Sign in</a>
+        </li>
+        <tal:block condition="userId">
+          <li id="utilitylinks-profile">
+            <a id="utilitylinks-profile-link" title="View your profile" 
+               href="/p/"><span class="fn" 
+                                tal:content="fn">Your Name</span></a>
+          </li>
+          <li class="ui-state-default ui-corner-top"
+              id="utilitylinks-log-out">
+            <a id="utilitylinks-log-out-link"
+               tal:attributes="title string:Log out from ${siteName}"
+               href="/cookie_authentication/logout">Sign out</a>
+          </li>
+        </tal:block>
+      </ul><!--utilitylinks-->
     </div><!--toparea-->
     <div id="bodyblock">    
       <div id="divisionHomeContent">
