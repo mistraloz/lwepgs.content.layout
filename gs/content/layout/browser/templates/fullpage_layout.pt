@@ -53,10 +53,6 @@
         </div><!--titlebar-->
       </div><!--titlebanner-->
       <div id="mainnav">
-        <div id="sitenavigation" metal:define-slot="sitenavigation"
-          tal:content="structure python:getattr(context, 'menumain.xml', getattr(context.Templates.output, 'menumain.xml'))(method='html')">
-          &#160;
-        </div><!--sitenavigation-->
         <div id="utilitylinks" class="tabs ui-tabs ui-widget"
           metal:define-slot="utilitylinks">
           <ul tal:define="userId user/getId;"
