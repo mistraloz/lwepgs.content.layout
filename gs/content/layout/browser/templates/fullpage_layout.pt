@@ -43,7 +43,7 @@
     tal:attributes="id python:'page-%s' % request.URLPATH1.strip('/').replace('/','_');">
     <div id="toparea">
       <div id="titlebar">
-        <a href="/"><span class="logo">&#160;</span>
+        <a id="titlebar-home-link" href="/"><span class="logo">&#160;</span>
         <span class="site" tal:content="siteName">Site Name</span></a>
         <ul id="utilitylinks" metal:define-slot="utilitylinks" 
             tal:define="userId user/getId;">
