@@ -5,7 +5,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <metal:block define-slot="title" />
-
     <tal:block  metal:define-slot="metadata-global"
       tal:condition="python:hasattr(context, 'metadata.xml')"
       tal:replace="structure python:getattr(context, 'metadata.xml')()">
@@ -70,7 +69,7 @@
       </div><!--titlebar-->
     </div><!--toparea-->
     <div id="bodyblock">    
-      <div id="breadcrumbs">
+      <div id="breadcrumbs" class="minor">
         <metal:block define-slot="breadcrumb">&#160;</metal:block>
       </div><!--breadcrumbs-->
       <metal:block define-slot="messages">
