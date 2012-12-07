@@ -56,8 +56,11 @@
                      define="fn python:user.getProperty('fn','?')">
             <li id="utilitylinks-profile">
               <a id="utilitylinks-profile-link" title="View your profile" 
-                 href="/p/"><span class="fn" 
-                                  tal:content="fn">Your Name</span></a>
+                 href="/p/">
+                <span tal:define="width string:14; height string:18;"
+                  tal:replace="structure provider:groupserver.UserImage">&#9786;</span>
+                <span class="fn" 
+                      tal:content="fn">Your Name</span></a>
             </li>
             <li id="utilitylinks-log-out">
               <a id="utilitylinks-log-out-link"
