@@ -99,11 +99,13 @@
                    tal:content="structure python:getattr(context, 'footerlinks.xml', getattr(context.Templates.output, 'footerlinks.xml'))(method='html')" />
     </div><!--bodyblock-->
     <script type="text/javascript" 
-      src="/++resource++jquery-1.4.4.min.js">&#160;</script>
+            src="/++resource++jquery-1.4.4.min.js">&#160;</script>
     <script type="text/javascript"
-      src="/++resource++disclosureButton-20100809.js">&#160;</script>
+            src="/++resource++jquery-ui-1.8.9.custom.min.js">&#160;</script>
+    <script type="text/javascript"
+            src="/++resource++disclosureButton-20100809.js">&#160;</script>
      <script type="text/javascript"
-      src="/++resource++disableSubmit-20091123.js">&#160;</script>     
+             src="/++resource++disableSubmit-20091123.js">&#160;</script>     
     <metal:block define-slot="javascript" />
   </body>
 </html>
