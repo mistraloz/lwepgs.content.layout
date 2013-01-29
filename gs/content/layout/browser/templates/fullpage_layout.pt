@@ -1,7 +1,6 @@
 <tal:block 
-  metal:define-macro="page"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+  metal:define-macro="page"><!DOCTYPE html>
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <metal:block define-slot="title" />
@@ -69,7 +68,7 @@
       </div><!--titlebar-->
     </div><!--toparea-->
     <div id="bodyblock">    
-      <div id="breadcrumbs" class="minor">
+      <div id="breadcrumbs" class="muted">
         <metal:block define-slot="breadcrumb">&#160;</metal:block>
       </div><!--breadcrumbs-->
       <metal:block define-slot="messages">
@@ -98,7 +97,7 @@
     <script type="text/javascript" 
             src="/++resource++jquery-1.8.3.js">&#160;</script>
     <script type="text/javascript"
-            src="/++resource++jquery-ui-1.9.2.custom.min.js">&#160;</script>
+            src="/++resource++bootstrap-2.2.2/js/bootstrap.js">&#160;</script>
     <script type="text/javascript"
             src="/++resource++disclosureButton-20100809.js">&#160;</script>
      <script type="text/javascript"
