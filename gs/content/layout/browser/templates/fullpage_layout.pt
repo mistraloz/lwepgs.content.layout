@@ -24,7 +24,7 @@
     <tal:block  metal:define-slot="metadata" />
 
     <!--Favourite Icon-->
-    <link rel="shortcut href="/++resource++favicon.ico" />
+    <link rel="shortcut" href="/++resource++favicon.ico" />
 
     <!-- styling typically covering all sites -->
     <link rel="stylesheet" type="text/css"
@@ -36,11 +36,11 @@
   </head>
   <body tal:define="siteName view/siteInfo/name | nothing"
     tal:attributes="id python:'page-%s' % request.URLPATH1.strip('/').replace('/','_');">
-    <div id="toparea">
+    <div id="toparea" role="banner">
       <div id="titlebar">
         <a id="titlebar-home-link" href="/"><span class="logo">&#160;</span>
         <span class="site" tal:content="siteName">Site Name</span></a>
-        <ul id="utilitylinks" metal:define-slot="utilitylinks" 
+        <ul id="utilitylinks" metal:define-slot="utilitylinks" role="navigation"
             tal:define="userId user/getId;">
           <li id="utilitylinks-log-in" tal:condition="not:userId">
             <a id="utilitylinks-log-in-link" href="/login.html"
@@ -68,7 +68,7 @@
       </div><!--titlebar-->
     </div><!--toparea-->
     <div id="bodyblock">    
-      <div id="breadcrumbs" class="muted">
+      <div id="breadcrumbs" class="muted" role="navigation">
         <metal:block define-slot="breadcrumb">&#160;</metal:block>
       </div><!--breadcrumbs-->
       <metal:block define-slot="messages">
