@@ -69,11 +69,9 @@
     </div><!--toparea-->
     <div id="bodyblock">    
       <div id="breadcrumbs" class="muted" role="navigation">
-        <metal:block define-slot="breadcrumb">&#160;</metal:block>
+        <metal:block define-slot="breadcrumb"> </metal:block>
       </div><!--breadcrumbs-->
-      <metal:block define-slot="messages">
-        &#160;
-      </metal:block><!--messages-->
+      <metal:block define-slot="messages"> </metal:block><!--messages-->
       <metal:block metal:define-slot="pagetitle"/>
       <div id="notifications" metal:define-slot="notifications"
            tal:define="notifications context/notifications | nothing"
