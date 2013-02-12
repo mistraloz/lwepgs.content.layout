@@ -89,17 +89,23 @@
       <metal:block define-slot="body" />   
       <div class="noFloat">&#160;</div>
       <!--Footer-->
-      <metal:block metal:define-slot="footer"
-                   tal:content="structure python:getattr(context, 'footerlinks.xml', getattr(context.Templates.output, 'footerlinks.xml'))(method='html')" />
+      <metal:block 
+        define-slot="footer"
+        tal:content="structure python:getattr(context, 'footerlinks.xml', getattr(context.Templates.output, 'footerlinks.xml'))(method='html')">
+        &#160;
+      </metal:block>
     </div><!--bodyblock-->
     <script type="text/javascript" 
+            src="/++resource++gs-content-js-loader-20130111.js">&#160;</script>
+    <script type="text/javascript" defer="true"
             src="/++resource++jquery-1.8.3.js">&#160;</script>
     <script type="text/javascript"
-            src="/++resource++bootstrap-2.2.2/js/bootstrap.js">&#160;</script>
-    <script type="text/javascript" defer="true" async="true"
+            src="/++resource++bootstrap-2.2.2/js/bootstrap.js"
+            defer="true">&#160;</script>
+    <script type="text/javascript" defer="true"
             src="/++resource++disclosureButton-20100809.js">&#160;</script>
-     <script type="text/javascript" defer="true" async="true"
-             src="/++resource++disableSubmit-20091123.js">&#160;</script>     
+    <script type="text/javascript" defer="true"
+            src="/++resource++disableSubmit-20091123.js">&#160;</script>     
     <metal:block define-slot="javascript" />
   </body>
 </html>
