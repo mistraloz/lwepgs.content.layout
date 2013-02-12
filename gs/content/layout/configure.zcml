@@ -7,7 +7,7 @@
 
   <browser:page 
     for="*"
-    template="browser/templates/menu_layout.pt"
+    template="browser/templates/fullpage_layout.pt"
     name="groupserver_layout" 
     permission="zope.Public" />
   <browser:page 
