@@ -103,8 +103,9 @@
             src="/++resource++bootstrap-2.2.2/js/bootstrap.js"
             defer="true">&#160;</script>
     <metal:block define-slot="javascript" />
-    <script type="text/javascript" defer="true"
-            src="/++resource++disclosureButton-20100809.js">&#160;</script>
+    <script type="text/javascript"
+            src="/++resource++gs-content-js-disclosure-20130113.js"
+            defer="true">&#160;</script>
     <script type="text/javascript" defer="true"
             src="/++resource++disableSubmit-20091123.js">&#160;</script>     
   </body>
