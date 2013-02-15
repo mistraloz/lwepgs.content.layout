@@ -86,7 +86,7 @@
           </p>
         </tal:block>
       </div><!--notifications-->
-      <metal:block define-slot="body" />   
+      <metal:block define-slot="body" />
       <div class="noFloat">&#160;</div>
       <!--Footer-->
       <metal:block 
@@ -96,7 +96,7 @@
       </metal:block>
     </div><!--bodyblock-->
     <script type="text/javascript" 
-            src="/++resource++gs-content-js-loader-20130111.js">&#160;</script>
+            src="/++resource++gs-content-js-loader-min-20130111.js">&#160;</script>
     <script type="text/javascript" defer="true"
             src="/++resource++jquery-1.8.3.js">&#160;</script>
     <script type="text/javascript"
