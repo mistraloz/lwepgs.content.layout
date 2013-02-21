@@ -68,7 +68,7 @@
       </div><!--titlebar-->
     </div><!--toparea-->
     <div id="bodyblock">    
-      <div id="breadcrumbs" class="muted" role="navigation">
+      <div id="breadcrumbs" class="muted small" role="navigation">
         <metal:block define-slot="breadcrumb"> </metal:block>
       </div><!--breadcrumbs-->
       <metal:block define-slot="messages"> </metal:block><!--messages-->
