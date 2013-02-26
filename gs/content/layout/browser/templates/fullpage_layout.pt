@@ -53,7 +53,7 @@
             <li id="utilitylinks-profile">
               <a id="utilitylinks-profile-link" title="View your profile" 
                  href="/p/">
-                <span tal:define="width string:18; height string:24;"
+                <span tal:define="width string:20; height string:20;"
                   tal:replace="structure provider:groupserver.UserImage">&#9786;</span>
                 <span class="fn" 
                       tal:content="fn">Your Name</span></a>
