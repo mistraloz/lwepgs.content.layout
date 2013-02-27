@@ -40,7 +40,8 @@
       <div id="titlebar">
         <a id="titlebar-home-link" href="/"><span class="logo">&#160;</span>
         <span class="site" tal:content="siteName">Site Name</span></a>
-        <ul id="utilitylinks" metal:define-slot="utilitylinks" role="navigation"
+        <ul id="utilitylinks" metal:define-slot="utilitylinks" 
+            role="navigation" class="dotted-inline-list"
             tal:define="userId user/getId;">
           <li id="utilitylinks-log-in" tal:condition="not:userId">
             <a id="utilitylinks-log-in-link" href="/login.html"
