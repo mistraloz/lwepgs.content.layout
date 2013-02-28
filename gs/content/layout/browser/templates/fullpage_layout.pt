@@ -101,7 +101,7 @@
     <script type="text/javascript" defer="true"
             src="/++resource++jquery-1.8.3.js">&#160;</script>
     <script type="text/javascript"
-            src="/++resource++bootstrap-2.2.2/js/bootstrap.js"
+            src="/++resource++bootstrap-2.3.0/js/bootstrap.js"
             defer="true">&#160;</script>
     <metal:block define-slot="javascript" />
     <script type="text/javascript"
