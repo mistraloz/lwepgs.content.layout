@@ -88,14 +88,16 @@
         </tal:block>
       </div><!--notifications-->
       <metal:block define-slot="body" />
-      <div class="noFloat">&#160;</div>
-      <!--Footer-->
-      <metal:block 
-        define-slot="footer"
-        tal:content="structure python:getattr(context, 'footerlinks.xml', getattr(context.Templates.output, 'footerlinks.xml'))(method='html')">
-        &#160;
-      </metal:block>
     </div><!--bodyblock-->
+    <div id="gs-content-layout-footer">
+      <div id="gs-content-layout-footer-content">
+        <metal:block 
+          define-slot="footer"
+          tal:content="structure python:getattr(context, 'footerlinks.xml', getattr(context.Templates.output, 'footerlinks.xml'))(method='html')">
+          &#160;
+        </metal:block>
+      </div><!--gs-content-layout-footer-content-->
+    </div><!--gs-content-layout-footer-->
     <script type="text/javascript" 
             src="/++resource++gs-content-js-loader-min-20130111.js">&#160;</script>
     <script type="text/javascript" defer="true"
