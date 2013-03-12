@@ -68,27 +68,29 @@
         </ul><!--utilitylinks-->
       </div><!--titlebar-->
     </div><!--toparea-->
-    <div id="bodyblock">    
-      <div id="breadcrumbs" class="muted small" role="navigation">
-        <metal:block define-slot="breadcrumb"> </metal:block>
-      </div><!--breadcrumbs-->
-      <metal:block define-slot="messages"> </metal:block><!--messages-->
-      <metal:block metal:define-slot="pagetitle"/>
-      <div id="notifications" metal:define-slot="notifications"
-           tal:define="notifications context/notifications | nothing"
-           tal:condition="notifications">
-        <tal:block 
-          repeat="notification python:notifications.objectValues()">
-          <p tal:replace="structure python:notification(method='html')">
-            You Maniacs! 
-            You blew it up! 
-            Ah, <strong>damn you!</strong>
-            God damn you all to <strong>Hell!</strong>
-          </p>
-        </tal:block>
-      </div><!--notifications-->
-      <metal:block define-slot="body" />
-    </div><!--bodyblock-->
+    <div id="gs-content-layout-body">
+      <div id="bodyblock">    
+        <div id="breadcrumbs" class="muted small" role="navigation">
+          <metal:block define-slot="breadcrumb"> </metal:block>
+        </div><!--breadcrumbs-->
+        <metal:block define-slot="messages"> </metal:block><!--messages-->
+        <metal:block metal:define-slot="pagetitle"/>
+        <div id="notifications" metal:define-slot="notifications"
+             tal:define="notifications context/notifications | nothing"
+             tal:condition="notifications">
+          <tal:block 
+            repeat="notification python:notifications.objectValues()">
+            <p tal:replace="structure python:notification(method='html')">
+              You Maniacs! 
+              You blew it up! 
+              Ah, <strong>damn you!</strong>
+              God damn you all to <strong>Hell!</strong>
+            </p>
+          </tal:block>
+        </div><!--notifications-->
+        <metal:block define-slot="body" />
+      </div><!--bodyblock-->
+    </div><!--gs-content-layout-body-->
     <div id="gs-content-layout-footer">
       <div id="gs-content-layout-footer-content">
         <metal:block 
