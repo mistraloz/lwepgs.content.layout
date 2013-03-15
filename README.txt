@@ -1,9 +1,9 @@
-==================
-``gs.content.css``
-==================
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Core CSS support for GroupServer
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=====================
+``gs.content.layout``
+=====================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The core page layout for GroupServer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :Authors: `Michael JasonSmith`_,
          Richard Waid
