@@ -8,7 +8,7 @@ The core page layout for GroupServer
 :Authors: `Michael JasonSmith`_,
          Richard Waid
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2013-03-12
+:Date: 2013-03-27
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
   `Creative Commons Attribution-Share Alike 3.0 New Zealand License`_
@@ -83,21 +83,24 @@ There are nine slots defined by the two layouts.
   slot appears after the standard GroupServer CSS [#css]_, so the page can
   overwrite the general style.
 
-``metal:fill-slot="sitenavigation"``:
-  The optional *site-navigation menu* (also known as the *main menu*). A
-  default menu (defined by the contents of
-  ``Templates/output/menumain.xml`` in the ZMI) will be used if the page
-  does not fill this slot. Almost the only time this is ever set is to
-  ensure there is *no* menu::
-
-    <metal:block fill-slot="sitenavigation">&#160;</metal:block>
-
 ``metal:fill-slot="utilitylinks"``:
   The optional *utility* menu. The only time this is ever set is to ensure
   the is *no* menu. By default the utility links show either:
   
   * A *Login* link, or
   * A *Log Out* link and a *Profile* link.
+
+``metal:fill-slot="breadcrumb"``:
+
+  The optional *breadcrumb trail*. It is normally an unordered list, with
+  the first item a link to the site-homepage::
+    
+   <ul metal:fill-slot="breadcrumb">
+     <li>
+       <a tal:attributes="title string:${view/siteInfo/name} Homepage"
+          href="/" title="Home">&#8962;</a>
+     </li>
+   </ul>
 
 ``metal:fill-slot="messages"``:
   Feedback messages for the form. This is almost only ever filled by the
@@ -129,7 +132,8 @@ Below are some examples for using the pay layouts.
 A Simple Page
 -------------
 
-*Most* pages only have to fill two slots: the ``title`` and the ``body``::
+*Most* pages only have to fill three slots: the ``title``, ``breadcrumb``
+and the ``body``::
 
   <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:tal="http://xml.zope.org/namespaces/tal"
@@ -138,8 +142,16 @@ A Simple Page
     <head>
       <title metal:fill-slot="title">I am a page: Example</title>
     </head>
-    <body metal:fill-slot="body">
-      <p>I am a page, honest.</p>
+    <body>
+      <ul metal:fill-slot="breadcrumb">
+        <li>
+          <a tal:attributes="title string:${view/siteInfo/name} Homepage"
+             href="/" title="Home">&#8962;</a>
+       </li>
+      </ul>
+      <div id="a-page" metal:fill-slot="body">
+        <p>I am a page, honest.</p>
+      </div><!--a-page-->
     </body>
   </html>
 
@@ -180,19 +192,15 @@ Some pages have some page-specific CSS styling and JavaScript::
       <metal:block fill-slot="body">
         <p>I am a <span class="wibble">page,</span> honest.</p>
       </metal:block>
-      <script type="text/javascript" metal:fill-slot="javascript">
-        jQuery(document).ready( function () {
-           alert('ZOMG Pages!');
-        });
-      </script>
+      <script type="text/javascript" metal:fill-slot="javascript"
+              defer="true" src="/++resource++my.js"> </script>
     </body>
   </html>
 
-Both the page-content and the JavaScript block sit within the ``<body>``
-element.  The page-content is defined by a ``<metal:block>`` element, but
-either a ``<div>`` or ``<tal:block>`` could also be used. (By using a
-``<metal:block>`` element the ``metal`` namespace can be dropped from the
-``fill-slot`` attribute.)
+The ``defer="true"`` is important: while both jQuery and Bootstrap are
+loaded by default, the loading of both is deferred until *after* the page
+has loaded. Anything that wants to use jQuery has to have ``defer="true"``
+set.
 
 Resources
 =========
@@ -219,7 +227,3 @@ Resources
 
 .. [#page] See the ``gs.content.base`` product
            <http://source.iopen.net/groupserver/gs.content.base/>
-
-.. _GroupServer: http://groupserver.org/
-.. _OnlineGroups.Net: http://onlinegroups.net/
-
