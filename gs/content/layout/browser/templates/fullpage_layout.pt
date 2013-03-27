@@ -45,6 +45,7 @@
             tal:define="userId user/getId;">
           <li id="utilitylinks-log-in" tal:condition="not:userId">
             <a id="utilitylinks-log-in-link" href="/login.html"
+               class="btn btn-small"
                tal:attributes="href url;"
                tal:define="url string:/login.html?came_from=${request/URLPATH0};"
                title="Log in here">Sign in</a>
