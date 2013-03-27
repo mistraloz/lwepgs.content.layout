@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 import os
 from setuptools import setup, find_packages
 from version import get_version
@@ -32,11 +32,15 @@ setup(name='gs.content.layout',
     zip_safe=True,
     install_requires=[
         'setuptools',
-        'zope.tal',
-        'zope.tales',
-        # -*- Extra requirements: -*-
+        'zope.tal',  # For tal: and metal: attributes
+        'zope.tales',  # For what goes in the tal: and metal: attributes
+        'gs.content.css',  # For the CSS resource
+        'gs.content.js.bootstrap',  # For the jquery resource
+        'gs.content.js.disclosure',  # For the disclosure resource
+        'gs.content.js.jquery',  # For the jquery resource
+        'gs.content.js.loader',  # For the JS loader resource
+        'gs.content.js.submit',  # For the submit button JS
     ],
     entry_points="""
     # -*- Entry points: -*-
     """,)
-
