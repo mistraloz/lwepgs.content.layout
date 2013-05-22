@@ -113,6 +113,9 @@
             src="/++resource++gs-content-js-disclosure-min-20130113.js"
             defer="true">&#160;</script>
     <script type="text/javascript" 
+            src="/++resource++gs-content-js-required-20130517.js"
+            defer="true">&#160;</script>     
+    <script type="text/javascript" 
             src="/++resource++gs-content-js-submit-min-20130113.js"
             defer="true">&#160;</script>     
   </body>
