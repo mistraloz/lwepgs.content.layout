@@ -28,10 +28,10 @@
 
     <!-- styling typically covering all sites -->
     <link rel="stylesheet" type="text/css"
-      href="/++resource++globalstyle-20120604.css" />
+          href="/++resource++globalstyle-20130523.css" />
     <!-- styling just covering local customisations to sites -->
     <link rel="stylesheet" type="text/css"
-      href="/++resource++site-20110714.css" />
+          href="/++resource++site-20110714.css" />
     <metal:block define-slot="style" />
   </head>
   <body tal:define="siteName view/siteInfo/name | nothing"
