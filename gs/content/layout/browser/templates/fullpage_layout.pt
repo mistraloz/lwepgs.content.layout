@@ -1,5 +1,6 @@
-<tal:block 
-  metal:define-macro="page"><!DOCTYPE html>
+<tal:block xmlns:tal="http://xml.zope.org/namespaces/tal"
+           xmlns:metal="http://xml.zope.org/namespaces/metal"
+           metal:define-macro="page"><!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
