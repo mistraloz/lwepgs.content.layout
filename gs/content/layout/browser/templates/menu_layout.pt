@@ -71,12 +71,15 @@
       </div><!--titlebar-->
     </div><!--toparea-->
     <div id="bodyblock">
-      <metal:block define-slot="contextnavigation"
-      tal:content="structure python:getattr(context, 'contextmenu.xml', getattr(context, 'contextmenu', getattr(context.Templates.output, 'contextmenu.xml')))(method='html')">
-          &#160;
-      </metal:block><!--contextnavigation-->          
-      <div id="content">
+      <div id="gs-content-layout-menu">
+        <metal:block define-slot="contextnavigation"
+                     tal:content="structure python:getattr(context, 'contextmenu.xml', getattr(context, 'contextmenu', getattr(context.Templates.output, 'contextmenu.xml')))(method='html')">&#160;</metal:block>
+      </div><!--gs-content-layout-menu-->          
+      <div id="gs-content-layout-menu-after">
         <metal:block define-slot="messages">&#160;</metal:block>
+        <div id="breadcrumbs" class="muted small" role="navigation">
+          <metal:block define-slot="breadcrumb"> </metal:block>
+        </div><!--breadcrumbs-->
         <div id="notifications" metal:define-slot="notifications"
           tal:define="notifications context/notifications | nothing"
           tal:condition="notifications">
