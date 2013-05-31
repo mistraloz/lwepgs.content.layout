@@ -39,7 +39,7 @@
     tal:attributes="id python:'page-%s' % request.URLPATH1.strip('/').replace('/','_');">
     <div id="toparea" role="banner">
       <div id="titlebar">
-        <a id="titlebar-home-link" href="/"><span class="logo">&#160;</span>
+        <a id="titlebar-home-link" href="/"><span class="logo"> </span>
         <span class="site" tal:content="siteName">Site Name</span></a>
         <ul id="utilitylinks" metal:define-slot="utilitylinks" 
             role="navigation" class="dotted-inline-list"
@@ -97,9 +97,7 @@
       <div id="gs-content-layout-footer-content">
         <metal:block 
           define-slot="footer"
-          tal:content="structure python:getattr(context, 'footerlinks.xml', getattr(context.Templates.output, 'footerlinks.xml'))(method='html')">
-          &#160;
-        </metal:block>
+          tal:content="structure python:getattr(context, 'footerlinks.xml', getattr(context.Templates.output, 'footerlinks.xml'))(method='html')"> </metal:block>
       </div><!--gs-content-layout-footer-content-->
     </div><!--gs-content-layout-footer-->
     <script type="text/javascript" 

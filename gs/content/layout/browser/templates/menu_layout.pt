@@ -73,10 +73,10 @@
     <div id="bodyblock">
       <div id="gs-content-layout-menu">
         <metal:block define-slot="contextnavigation"
-                     tal:content="structure python:getattr(context, 'contextmenu.xml', getattr(context, 'contextmenu', getattr(context.Templates.output, 'contextmenu.xml')))(method='html')">&#160;</metal:block>
+                     tal:content="structure python:getattr(context, 'contextmenu.xml', getattr(context, 'contextmenu', getattr(context.Templates.output, 'contextmenu.xml')))(method='html')"> </metal:block>
       </div><!--gs-content-layout-menu-->          
       <div id="gs-content-layout-menu-after">
-        <metal:block define-slot="messages">&#160;</metal:block>
+        <metal:block define-slot="messages"> </metal:block>
         <div id="breadcrumbs" class="muted small" role="navigation">
           <metal:block define-slot="breadcrumb"> </metal:block>
         </div><!--breadcrumbs-->
@@ -93,7 +93,7 @@
             </p>
           </tal:block>
         </div><!--notifications-->
-        <metal:block define-slot="pagetitle">&#160;</metal:block>
+        <metal:block define-slot="pagetitle"> </metal:block>
         <metal:block define-slot="body">&#160;</metal:block>
       </div><!--content-->
     </div><!--gs-content-layout-body-->
@@ -101,9 +101,7 @@
       <div id="gs-content-layout-footer-content">
         <metal:block 
           define-slot="footer"
-          tal:content="structure python:getattr(context, 'footerlinks.xml', getattr(context.Templates.output, 'footerlinks.xml'))(method='html')">
-          &#160;
-        </metal:block>
+          tal:content="structure python:getattr(context, 'footerlinks.xml', getattr(context.Templates.output, 'footerlinks.xml'))(method='html')"> </metal:block>
       </div><!--gs-content-layout-footer-content-->
     </div><!--gs-content-layout-footer-->
     <script type="text/javascript" 
