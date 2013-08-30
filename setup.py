@@ -35,12 +35,12 @@ setup(name='gs.content.layout',
         'zope.tal',  # For tal: and metal: attributes
         'zope.tales',  # For what goes in the tal: and metal: attributes
         'gs.content.css',  # For the CSS resource
-        'gs.content.js.bootstrap',  # For the Twitter Bootstrap resource
-        'gs.content.js.disclosure',  # For the disclosure resource
-        'gs.content.js.jquery.base',  # For the jQuery resource
-        'gs.content.js.loader',  # For the JS loader resource
-        'gs.content.js.required',  # For the required-widgets JS
-        'gs.content.js.submit',  # For the submit button JS
+        'gs.content.js.bootstrap[zope]',  # For the Twitter Bootstrap resource
+        'gs.content.js.disclosure[zope]',  # For the disclosure resource
+        'gs.content.js.jquery.base[zope]',  # For the jQuery resource
+        'gs.content.js.loader[zope]',  # For the JS loader resource
+        'gs.content.js.required[zope]',  # For the required-widgets JS
+        'gs.content.js.submit[zope]',  # For the submit button JS
     ],
     entry_points="""
     # -*- Entry points: -*-
