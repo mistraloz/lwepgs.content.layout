@@ -3,6 +3,13 @@
            metal:define-macro="page"><!DOCTYPE html>
 <html lang="en">
   <head>
+    <base tal:define="u view/request/URL;
+                      isPage python:'.' in u[-5:];
+                      endsInSlash python:view.request['ACTUAL_URL'][-1] == '/';
+                      s python:'/' if (endsInSlash or isPage) else '';
+                      urlSansPage view/request/URL1;
+                      baseURL python:'{0}{1}'.format(urlSansPage, s)"
+          tal:attributes="href baseURL" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <metal:block define-slot="title" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
@@ -11,14 +18,6 @@
       tal:replace="structure python:getattr(context, 'metadata.xml')()">
       &#160;
     </tal:block>
-    <base 
-      tal:define="u request/URL;
-                  u1 request/URL1;
-                  s python:'/' if request['ACTUAL_URL'][-1] == '/' else '';
-                  hasIndex python:u[-10:] == 'index.html';
-                  url python:'%s%s' % (u1, s) if hasIndex  else u"
-      tal:attributes="href url" />
-
     <link rel="home" href="/"
       tal:attributes="title string:${view/siteInfo/name} Home;"/>
     <link rel="help" href="/help"
