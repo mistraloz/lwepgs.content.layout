@@ -1,7 +1,10 @@
 <tal:block xmlns:tal="http://xml.zope.org/namespaces/tal"
            xmlns:metal="http://xml.zope.org/namespaces/metal"
            metal:define-macro="page"><!DOCTYPE html>
-<html lang="en">
+<html lang="en" tal:define="ap view/request/AUTHENTICATION_PATH;
+                            hasSkin python:ap[:6] == '++skin';
+                            skin python:ap.split('/')[0] if hasSkin else ''"
+      tal:attributes="data-skin skin">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <base tal:define="url view/request/URL;
