@@ -4,6 +4,9 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <base tal:define="url view/request/URL;
+                      urlSansPage string:${view/request/URL1}/;"
+          tal:attributes="href urlSansPage; data-url url;" />
     <metal:block define-slot="title" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
     <tal:block  metal:define-slot="metadata-global"
@@ -11,14 +14,6 @@
       tal:replace="structure python:getattr(context, 'metadata.xml')()">
       &#160;
     </tal:block>
-    <base 
-      tal:define="u request/URL;
-                  u1 request/URL1;
-                  s python:'/' if request['ACTUAL_URL'][-1] == '/' else '';
-                  hasIndex python:u[-10:] == 'index.html';
-                  url python:'%s%s' % (u1, s) if hasIndex  else u"
-      tal:attributes="href url" />
-
     <link rel="home" href="/"
       tal:attributes="title string:${view/siteInfo/name} Home;"/>
     <link rel="help" href="/help"

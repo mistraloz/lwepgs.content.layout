@@ -3,14 +3,10 @@
            metal:define-macro="page"><!DOCTYPE html>
 <html lang="en">
   <head>
-    <base tal:define="u view/request/URL;
-                      isPage python:'.' in u[-5:];
-                      endsInSlash python:view.request['ACTUAL_URL'][-1] == '/';
-                      s python:'/' if (endsInSlash or isPage) else '';
-                      urlSansPage view/request/URL1;
-                      baseURL python:'{0}{1}'.format(urlSansPage, s)"
-          tal:attributes="href baseURL" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <base tal:define="url view/request/URL;
+                      urlSansPage string:${view/request/URL1}/;"
+          tal:attributes="href urlSansPage; data-url url;" />
     <metal:block define-slot="title" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
     <tal:block  metal:define-slot="metadata-global"
