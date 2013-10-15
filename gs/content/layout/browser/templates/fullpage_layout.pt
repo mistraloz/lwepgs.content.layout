@@ -8,8 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <base tal:define="url view/request/URL;
-                      urlSansPage string:${view/request/URL1}/;"
-          tal:attributes="href urlSansPage; data-url url;" />
+                      urlSansPage string:${view/request/URL1}/;
+                      urlSansProtocol python:urlSansPage.split(':')[1];"
+          tal:attributes="href urlSansProtocol; data-url url; 
+                          data-url-sans-page urlSansPage;" />
     <metal:block define-slot="title" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
     <tal:block  metal:define-slot="metadata-global"
