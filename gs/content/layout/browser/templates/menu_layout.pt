@@ -5,8 +5,8 @@
   i18n:domain="gs.content.layout"
   define-macro="page"><tal:doctype replace="structure string:&lt;!DOCTYPE html&gt;" />
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
-      tal:define="ap view/request/AUTHENTICATION_PATH;
-                  hasSkin python:ap[:6] == '++skin';
+      tal:define="ap view/request/AUTHENTICATION_PATH | nothing;
+                  hasSkin python:ap and (ap[:6] == '++skin');
                   skin python:ap.split('/')[0] if hasSkin else '';
                   url view/request/URL;
                   urlSansPage string:${view/request/URL1}/;
