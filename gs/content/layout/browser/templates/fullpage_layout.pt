@@ -107,7 +107,8 @@
       </div><!--gs-content-layout-footer-content-->
     </div><!--gs-content-layout-footer-->
     <script type="text/javascript"
-            src="/++resource++gs-content-js-loader-min-20130111.js">&#160;</script>
+            src="/++resource++gs-content-js-loader-min-20130111.js"
+            defer="false">&#160;</script>
     <script type="text/javascript" defer="true"
             src="/++resource++jquery-1.9.1.min.js">&#160;</script>
     <script type="text/javascript"
