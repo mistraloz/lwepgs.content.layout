@@ -48,7 +48,7 @@
         <a id="titlebar-home-link" href="/"><span class="logo">&#160;</span>
         <span class="site" tal:content="siteName">Site Name</span></a>
         <ul id="utilitylinks" metal:define-slot="utilitylinks"
-            role="navigation" class="dotted-inline-list"
+            class="dotted-inline-list"
             tal:define="userId user/getId;">
           <li id="utilitylinks-log-in" tal:condition="not:userId">
             <a id="utilitylinks-log-in-link" href="/login.html"
@@ -111,22 +111,22 @@
       </div><!--gs-content-layout-footer-content-->
     </div><!--gs-content-layout-footer-->
     <script type="text/javascript"
-            src="/++resource++gs-content-js-loader-min-20130111.js">&#160;</script>
-    <script type="text/javascript" defer="true"
-            src="/++resource++jquery-1.9.1.min.js">&#160;</script>
+            src="/++resource++gs-content-js-loader-min-20130111.js"> </script>
+    <script type="text/javascript" defer="defer"
+            src="/++resource++jquery-1.9.1.min.js"> </script>
     <script type="text/javascript"
             src="/++resource++bootstrap-2.3.0/js/bootstrap.min.js"
-            defer="true">&#160;</script>
+            defer="defer"> </script>
     <metal:block define-slot="javascript" />
     <script type="text/javascript"
             src="/++resource++gs-content-js-disclosure-min-20130113.js"
-            defer="true">&#160;</script>
+            defer="defer"> </script>
     <script type="text/javascript"
             src="/++resource++gs-content-js-required-min-20130517.js"
-            defer="true">&#160;</script>
+            defer="defer"> </script>
     <script type="text/javascript"
             src="/++resource++gs-content-js-submit-min-20130704.js"
-            defer="true">&#160;</script>
+            defer="defer"> </script>
   </body>
 </html>
 </metal:macro>
