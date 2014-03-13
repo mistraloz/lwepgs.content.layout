@@ -1,28 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright © 2013, 2014 OnlineGroups.net and Contributors. -->
+<!-- All Rights Reserved. -->
+
+<!-- This software is subject to the provisions of the Zope Public -->
+<!-- License, Version 2.1 (ZPL).  A copy of the ZPL should accompany this -->
+<!-- distribution. -->
+
+<!-- THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED -->
+<!-- WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED -->
+<!-- WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND -->
+<!-- FITNESS FOR A PARTICULAR PURPOSE. -->
 <configure xmlns="http://namespaces.zope.org/zope"
            xmlns:browser="http://namespaces.zope.org/browser">
 
   <!-- The normal (full-page) layout -->
-  <browser:page 
-    name="groupserver_layout" 
+  <browser:page
+    name="groupserver_layout"
     for="*"
     template="browser/templates/fullpage_layout.pt"
     permission="zope.Public" />
-  <browser:page 
-    name="groupserver_menu_layout" 
+  <browser:page
+    name="groupserver_menu_layout"
     for="*"
     template="browser/templates/menu_layout.pt"
     permission="zope.Public" />
 
   <!-- The (increasingly) rare menu-layout -->
-  <browser:page 
-    name="groupserver_site_home_layout" 
-    for="*" 
+  <browser:page
+    name="groupserver_site_home_layout"
+    for="*"
     template="browser/templates/fullpage_layout.pt"
     permission="zope.Public" />
-  <browser:page 
-    name="groupserver_full_layout" 
-    for="*" 
+  <browser:page
+    name="groupserver_full_layout"
+    for="*"
     template="browser/templates/fullpage_layout.pt"
     permission="zope.Public" />
 
