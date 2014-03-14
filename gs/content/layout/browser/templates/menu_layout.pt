@@ -112,11 +112,10 @@
     </div><!--gs-content-layout-footer-->
     <script type="text/javascript"
             src="/++resource++gs-content-js-loader-min-20140313.js"> </script>
-    <script type="text/javascript" defer="defer"
-            src="/++resource++jquery-1.9.1.min.js"> </script>
     <script type="text/javascript"
-            src="/++resource++bootstrap-2.3.2/js/bootstrap.min.js"
-            defer="defer"> </script>
+            src="/++resource++jquery-1.9.1.min.js"> </script>
+    <script type="text/javascript" defer="defer"
+            src="/++resource++bootstrap-2.3.2/js/bootstrap.min.js"> </script>
     <metal:block define-slot="javascript" />
     <script type="text/javascript"
             src="/++resource++gs-content-js-disclosure-min-20140313.js"
