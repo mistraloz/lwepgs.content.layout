@@ -42,8 +42,10 @@
           href="/++resource++site-20131105.css" />
     <metal:block define-slot="style" />
   </head>
-  <body tal:define="siteName view/siteInfo/name | nothing"
-    tal:attributes="id python:'page-%s' % request.URLPATH1.strip('/').replace('/','_');">
+  <body tal:define="siteName view/siteInfo/name | nothing;
+                    u string:unknown;
+                    p request/URLPATH1 | u;"
+    tal:attributes="id python:'page-%s' % p.strip('/').replace('/','_');">
     <div id="toparea" role="banner">
       <div id="titlebar">
         <a id="titlebar-home-link" href="/"><span class="logo">&#160;</span>
