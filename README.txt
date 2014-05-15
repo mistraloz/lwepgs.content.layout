@@ -8,7 +8,7 @@ The core page layout for GroupServer
 :Authors: `Michael JasonSmith`_,
          Richard Waid
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2013-03-27
+:Date: 2014-05-15
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
   `Creative Commons Attribution-Share Alike 3.0 New Zealand License`_
@@ -97,8 +97,16 @@ There are nine slots defined by the two layouts.
     
    <ul metal:fill-slot="breadcrumb">
      <li>
-       <a tal:attributes="title string:${view/siteInfo/name} Homepage"
-          href="/" title="Home">&#8962;</a>
+        <a href="/" class="icon-alone">
+          <span aria-hidden="true" data-icon="&#x2302;"></span>
+          <span class="screen-reader-text">Site home page</span>
+        </a>
+     </li>
+     <li>
+       <a href="#"><strong>Important</strong></a>
+     </li>
+     <li>
+       A page.
      </li>
    </ul>
 
