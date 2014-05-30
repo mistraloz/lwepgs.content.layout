@@ -11,7 +11,7 @@
                   url view/request/URL;
                   u1 view/request/URL1 | url;
                   urlSansPage string:${u1}/;
-                  urlSansProtocol python:urlSansPage.split(':')[1];"
+                  urlSansProtocol python:':'.join(urlSansPage.split(':')[1:]);"
       tal:attributes="data-skin skin; data-url url;
                       data-url-sans-page urlSansPage">
   <head>
