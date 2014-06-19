@@ -32,7 +32,7 @@
     <tal:block  metal:define-slot="metadata" />
 
     <!--Favourite Icon-->
-    <link rel="shortcut" href="/++resource++favicon.ico" />
+    <link rel="icon" href="/++resource++favicon.ico" />
 
     <!-- styling typically covering all sites -->
     <link rel="stylesheet" type="text/css"
