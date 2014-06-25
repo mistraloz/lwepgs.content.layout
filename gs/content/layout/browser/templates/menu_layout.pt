@@ -56,6 +56,10 @@
           href="/++resource++favicon-20140624a/gs-logo-120x120.png" />
     <link rel="apple-touch-icon" sizes="152x152" type="image/png"
           href="/++resource++favicon-20140624a/gs-logo-152x152.png" />
+    <!--Fine, and a tile for Microsoft Windows 8-->
+    <meta name="msapplication-TileColor" content="#CCCCCC" />
+    <meta name="msapplication-TileImage"
+          content="/++resource++favicon-20140624a/gs-logo-144x144.png" />
 
     <!-- styling typically covering all sites -->
     <link rel="stylesheet" type="text/css"
