@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="gs-logo.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-1004.3622)"
+     id="layer1">
+    <g
+       transform="translate(0.62012863,0.03870635)"
+       id="g2998">
+      <g
+         id="text2985"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:138.49999905%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Swis721 BT;-inkscape-font-specification:Swis721 BT Bold">
+        <path
+           d="m 27.482399,1014.5133 -4.983398,0 c -0.382837,-1.791 -1.251,-3.1855 -2.604493,-4.1836 -1.339864,-1.0117 -3.021503,-1.5175 -5.044922,-1.5176 -3.021497,10e-5 -5.3662217,1.0049 -7.0341792,3.0147 -1.6679766,1.9961 -2.5019602,4.8125 -2.5019531,8.4492 -7.1e-6,3.5684 0.8408124,6.3779 2.5224609,8.4287 1.6816294,2.0508 3.9785024,3.0762 6.8906254,3.0762 2.47459,0 4.477518,-0.7656 6.008789,-2.2969 1.544898,-1.5312 2.365209,-3.582 2.460937,-6.1523 l -8.264648,0 0,-4.1631 12.899414,0 C 28,1019.3622 26,1029.3622 23.667946,1031.6578 c -1.121118,1.5176 -2.481468,2.6661 -4.081055,3.4453 -1.599629,0.7793 -3.404315,1.169 -5.414062,1.169 -4.169934,0 -7.5537196,-1.4561 -10.1513675,-4.3682 -2.5839876,-2.9257 -3.87597846,-6.7607 -3.87597658,-11.5049 -1.88e-6,-4.8398 1.30566088,-8.7021 3.91699218,-11.5869 2.6113197,-2.8847 6.0976439,-4.3271 10.4589839,-4.3271 3.636699,0 6.596657,0.8819 8.879883,2.6455 2.283176,1.7637 3.643526,4.2246 4.081055,7.3828"
+           id="path2996"
+           style="font-size:42px;font-family:Swis721 Md BT;-inkscape-font-specification:Swis721 Md BT Bold" />
+      </g>
+      <g
+         id="text2989"
+         style="font-size:42px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:138.49999905%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Futura Bk BT;-inkscape-font-specification:Futura Bk BT">
+        <path
+           d="m 45.773437,1029.9725 -4.77832,0.02 c -0.109395,-1.7089 -0.758808,-3.0488 -1.948242,-4.0195 -1.175798,-0.9707 -2.754898,-1.456 -4.737305,-1.456 -1.640636,0 -2.980479,0.3828 -4.019531,1.1484 -1.039071,0.7656 -1.558601,1.7158 -1.558594,2.8506 -7e-6,1.1484 0.458,2.0918 1.374024,2.8301 0.916005,0.7246 2.836902,1.4629 5.762695,2.2148 4.44334,1.1211 7.341775,2.3379 8.695313,3.6504 1.367162,1.3125 2.050755,3.1445 2.050781,5.4961 -2.6e-5,2.8437 -1.066431,5.1338 -3.199219,6.8701 -2.119161,1.7227 -4.956072,2.584 -8.510742,2.584 -3.746104,0 -6.665046,-0.9024 -8.756836,-2.707 -2.078128,-1.8047 -3.192385,-4.4024 -3.342774,-7.793 l 4.88086,0 c 0.136712,1.9551 0.868156,3.4726 2.194336,4.5527 1.339833,1.0801 3.151355,1.6201 5.43457,1.6201 1.72264,0 3.130842,-0.4169 4.224609,-1.2509 1.107403,-0.834 1.661113,-1.8594 1.661133,-3.0762 -2e-5,-0.4785 -0.157246,-1.0186 -0.471679,-1.6201 -0.300801,-0.6153 -0.690449,-1.1416 -1.168946,-1.5791 -0.792986,-0.7246 -2.556656,-1.4219 -5.291015,-2.0918 -0.587904,-0.1504 -1.032239,-0.2598 -1.333008,-0.3282 -3.376962,-0.8886 -5.762702,-2.0165 -7.157227,-3.3837 -1.394534,-1.3809 -2.091799,-3.2539 -2.091797,-5.6192 -2e-6,-2.5156 1.018551,-4.5595 3.055664,-6.1318 2.050774,-1.5859 4.771474,-2.3789 8.16211,-2.3789 3.294905,0 5.919902,0.8682 7.875,2.6045 1.968726,1.7227 2.966772,4.0537 2.99414,6.9931"
+           id="path3024"
+           style="font-family:Swis721 Md BT;-inkscape-font-specification:Swis721 Md BT" />
+      </g>
+    </g>
+  </g>
+</svg>

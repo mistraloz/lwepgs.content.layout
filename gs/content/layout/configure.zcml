@@ -37,4 +37,9 @@
     template="browser/templates/fullpage_layout.pt"
     permission="zope.Public" />
 
+  <browser:resourceDirectory
+    name="favicon-20140624a"
+    directory="browser/images/"
+    permission="zope.Public" />
+
 </configure>

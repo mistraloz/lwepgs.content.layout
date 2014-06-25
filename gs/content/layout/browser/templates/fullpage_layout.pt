@@ -16,15 +16,18 @@
                       data-url-sans-page urlSansPage">
   <head>
     <base tal:attributes="href urlSansProtocol" />
-
+    <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
     <metal:block define-slot="title" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <tal:block  metal:define-slot="metadata-global"
       tal:condition="python:hasattr(context, 'metadata.xml')"
       tal:replace="structure python:getattr(context, 'metadata.xml')()">
       &#160;
     </tal:block>
+
     <link rel="home" href="/"
       tal:attributes="title string:${view/siteInfo/name} Home;"/>
     <link rel="help" href="/help"
@@ -32,7 +35,29 @@
     <tal:block  metal:define-slot="metadata" />
 
     <!--Favourite Icon-->
-    <link rel="icon" href="/++resource++favicon.ico" />
+    <link rel="icon" type="image/svg+xml"
+          href="/++resource++favicon-20140624a/gs-logo.svg" />
+    <link rel="icon" sizes="256x256" type="image/png"
+          href="/++resource++favicon-20140624a/gs-logo-256x256.png" />
+    <link rel="icon" sizes="128x128" type="image/png"
+          href="/++resource++favicon-20140624a/gs-logo-128x128.png" />
+    <link rel="icon" sizes="64x64" type="image/png"
+          href="/++resource++favicon-20140624a/gs-logo-64x64.png" />
+    <link rel="icon" sizes="32x32" type="image/png"
+          href="/++resource++favicon-20140624a/gs-logo-32x32.png" />
+    <link rel="icon" sizes="16x16" type="image/png"
+          href="/++resource++favicon-20140624a/gs-logo-16x16.png" />
+    <link rel="icon" sizes="any" type="image/png"
+          href="/++resource++favicon-20140624a/gs-logo.svg" />
+    <!--And again for Apple-->
+    <link rel="apple-touch-icon" sizes="60x60" type="image/png"
+          href="/++resource++favicon-20140624a/gs-logo-60x60.png" />
+    <link rel="apple-touch-icon" sizes="76x76" type="image/png"
+          href="/++resource++favicon-20140624a/gs-logo-76x76.png" />
+    <link rel="apple-touch-icon" sizes="120x120" type="image/png"
+          href="/++resource++favicon-20140624a/gs-logo-120x120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" type="image/png"
+          href="/++resource++favicon-20140624a/gs-logo-152x152.png" />
 
     <!-- styling typically covering all sites -->
     <link rel="stylesheet" type="text/css"
