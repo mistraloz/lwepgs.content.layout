@@ -13,6 +13,8 @@
 <configure xmlns="http://namespaces.zope.org/zope"
            xmlns:browser="http://namespaces.zope.org/browser">
 
+  <include package="zope.viewlet" file="meta.zcml" />
+
   <!-- The normal (full-page) layout -->
   <browser:page
     name="groupserver_layout"
@@ -37,6 +39,39 @@
     template="browser/templates/fullpage_layout.pt"
     permission="zope.Public" />
 
+  <!-- The utility links -->
+  <browser:viewletManager
+    name="groupserver.UtilityLinks"
+    for="*"
+    provides=".interfaces.IUtilityLinks"
+    class="gs.viewlet.manager.WeightOrderedViewletManager"
+    template="browser/templates/simplemanager.pt"
+    permission="zope2.Public" />
+  <browser:viewlet
+    name="gs-content-layout-utilitylinks"
+    manager=".interfaces.IUtilityLinks"
+    class="gs.viewlet.SiteViewlet"
+    template="browser/templates/utilitylinks.pt"
+    permission="zope2.Public"
+    weight="10"
+    title="Utility Links" />
+
+  <!-- The favicons. Note the plural. -->
+  <browser:viewletManager
+    name="groupserver.Favicon"
+    for="*"
+    provides=".interfaces.IFavicon"
+    class="gs.viewlet.manager.WeightOrderedViewletManager"
+    template="browser/templates/simplemanager.pt"
+    permission="zope2.Public" />
+  <browser:viewlet
+    name="gs-content-layout-favicon"
+    manager=".interfaces.IFavicon"
+    class="gs.viewlet.SiteViewlet"
+    template="browser/templates/favicon.pt"
+    permission="zope2.Public"
+    weight="10"
+    title="Standard Favicon" />
   <browser:resourceDirectory
     name="favicon-20140624a"
     directory="browser/images/"
