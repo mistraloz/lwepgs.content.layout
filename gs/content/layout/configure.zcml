@@ -64,17 +64,5 @@
     class="gs.viewlet.manager.WeightOrderedViewletManager"
     template="browser/templates/simplemanager.pt"
     permission="zope2.Public" />
-  <browser:viewlet
-    name="gs-content-layout-favicon"
-    manager=".interfaces.IFavicon"
-    class="gs.viewlet.SiteViewlet"
-    template="browser/templates/favicon.pt"
-    permission="zope2.Public"
-    weight="10"
-    title="Standard Favicon" />
-  <browser:resourceDirectory
-    name="favicon-20140624a"
-    directory="browser/images/"
-    permission="zope.Public" />
 
 </configure>
