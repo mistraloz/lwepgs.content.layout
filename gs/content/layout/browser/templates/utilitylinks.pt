@@ -1,12 +1,15 @@
 <ul id="utilitylinks"
     class="dotted-inline-list"
-    tal:define="userId user/getId;">
+    tal:define="userId user/getId;"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="gs.content.layout">
   <li id="utilitylinks-log-in" tal:condition="not:userId">
     <a id="utilitylinks-log-in-link" href="/login.html"
        class="btn btn-small" data-icon="&#x1f512;"
        tal:attributes="href url;"
        tal:define="url string:/login.html?came_from=${request/URLPATH0};"
-       title="Log in here">Sign in</a>
+       title="Log in here"
+       i18n:translate="link_sign_in">Sign in</a>
   </li>
   <tal:block condition="userId"
              define="fn python:user.getProperty('fn','?')">
@@ -21,7 +24,8 @@
     <li id="utilitylinks-log-out">
       <a id="utilitylinks-log-out-link"
          tal:attributes="title string:Log out from ${view/siteInfo/name}"
-         href="/cookie_authentication/logout">Sign out</a>
+         href="/cookie_authentication/logout"
+         i18n:translate="link_sign_out">Sign out</a>
     </li>
   </tal:block>
 </ul><!--utilitylinks-->

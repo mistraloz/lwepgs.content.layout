@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2014-09-06 19:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Alice Murphy <ajr@posteo.de>\n"
+"Language-Team: German"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: de\n"
+"Language-Name: German\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: gs.content.layout\n"
+
+#. Default: "Sign in"
+#: ./gs/content/layout/browser/templates/utilitylinks.pt:7
+msgid "link_sign_in"
+msgstr "Einloggen"
+
+#. Default: "Sign out"
+#: ./gs/content/layout/browser/templates/utilitylinks.pt:25
+msgid "link_sign_out"
+msgstr "Ausloggen"
+
