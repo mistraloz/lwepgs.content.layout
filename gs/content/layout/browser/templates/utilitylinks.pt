@@ -14,7 +14,7 @@
   <tal:block condition="userId"
              define="fn python:user.getProperty('fn','?')">
     <li id="utilitylinks-profile">
-      <a id="utilitylinks-profile-link" title="View your profile"
+      <a id="utilitylinks-profile-link" i18n:attributes="title link_title_view_profile"
          href="/p/">
         <span tal:define="size string:20;"
               tal:replace="structure provider:groupserver.SquareUserImage">&#9786;</span>

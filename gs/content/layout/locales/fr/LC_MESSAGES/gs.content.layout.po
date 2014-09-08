@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-09-08 21:15+0000\n"
+"POT-Creation-Date: 2014-09-07 11:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Michael JasonSmith <mpj17@onlinegroups.net>\n"
-"Language-Team: French"
+"Language-Team: FrenchMIME-Version: 1.0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,3 +23,8 @@ msgstr "Connexion"
 #: ./gs/content/layout/browser/templates/utilitylinks.pt:25
 msgid "link_sign_out"
 msgstr "Se déconnecter"
+
+#: ./gs/content/layout/browser/templates/utilitylinks.pt:17
+msgid "link_title_view_profile"
+msgstr "Affichez votre profil"
+
