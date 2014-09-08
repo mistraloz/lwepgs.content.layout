@@ -21,7 +21,8 @@ version = get_version()
 
 with codecs.open('README.txt', encoding='utf-8') as f:
     long_description = f.read()
-with codecs.open(os.path.join("docs", "HISTORY.txt"), encoding='utf-8') as f:
+with codecs.open(os.path.join("docs", "HISTORY.txt"), 
+                 encoding='utf-8') as f:
     long_description += '\n' + f.read()
 
 setup(name='gs.content.layout',
@@ -35,6 +36,8 @@ setup(name='gs.content.layout',
         "Intended Audience :: Developers",
         'License :: OSI Approved :: Zope Public License',
         "Natural Language :: English",
+        "Natural Language :: French",
+        "Natural Language :: German",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2",
@@ -53,8 +56,10 @@ setup(name='gs.content.layout',
         'setuptools',
         'zope.browserpage',  # For the <browser:page config.
         'zope.browserresource',  # For the <browser:resource config.
+        'zope.i18nmessageid',  # For the i18n
         'zope.tal',  # For tal: and metal: attributes
         'zope.tales',  # For what goes in the tal: and metal: attributes
+        'AccessControl',  # For granting access to the message factory.
         'gs.content.css',  # For the CSS resource
         'gs.content.js.bootstrap[zope]',  # For the Twitter Bootstrap resource
         'gs.content.js.disclosure[zope]',  # For the disclosure resource
@@ -63,6 +68,5 @@ setup(name='gs.content.layout',
         'gs.content.js.required[zope]',  # For the required-widgets JS
         'gs.content.js.submit[zope]',  # For the submit button JS
     ],
-    entry_points="""
-    # -*- Entry points: -*-
+    entry_points="""# -*- Entry points: -*-
     """,)
