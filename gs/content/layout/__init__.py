@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
+#lint:disable
 from zope.i18nmessageid import MessageFactory
-from AccessControl import ModuleSecurityInfo
-
 GSMessageFactory = MessageFactory('gs.content.layout')
-
-ModuleSecurityInfo('gs.content.layout').declarePublic('_')
+#lint:enable
