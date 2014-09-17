@@ -8,11 +8,14 @@ The core page layout for GroupServer
 :Authors: `Michael JasonSmith`_,
          Richard Waid
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2014-05-15
+:Date: 2014-09-17
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
-  `Creative Commons Attribution-Share Alike 3.0 New Zealand License`_
-  by `OnlineGroups.Net`_.
+  `Creative Commons Attribution-Share Alike 4.0 International License`_
+  by `OnlineGroups.net`_.
+
+..  _Creative Commons Attribution-Share Alike 4.0 International License:
+    http://creativecommons.org/licenses/by-sa/4.0/
 
 Introduction
 ============
@@ -91,7 +94,6 @@ There are nine slots defined by the two layouts.
   * A *Log Out* link and a *Profile* link.
 
 ``metal:fill-slot="breadcrumb"``:
-
   The optional *breadcrumb trail*. It is normally an unordered list, with
   the first item a link to the site-homepage::
     
@@ -213,7 +215,7 @@ set.
 Resources
 =========
 
-- Code repository: https://source.iopen.net/groupserver/gs.content.layout
+- Code repository: https://github.com/groupserver/gs.content.layout
 - Questions and comments to http://groupserver.org/groups/development
 - Report bugs at https://redmine.iopen.net/projects/groupserver
 
@@ -221,17 +223,15 @@ Resources
 .. _GroupServer.org: http://groupserver.org/
 .. _OnlineGroups.Net: https://onlinegroups.net/
 .. _Michael JasonSmith: http://groupserver.org/p/mpj17/
-.. _Creative Commons Attribution-Share Alike 3.0 New Zealand License:
-   http://creativecommons.org/licenses/by-sa/3.0/nz/
 
 .. [#css] See the ``gs.content.css`` product
-          <http://source.iopen.net/groupserver/gs.content.css/>
+          <http://github.com/groupserver/gs.content.css/>
 
 .. [#form] See the ``gs.content.form`` product
-           <http://source.iopen.net/groupserver/gs.content.form/>
+           <http://github.com/groupserver/gs.content.form/>
 
 .. [#jquery] See the ``gs.content.js.jquery`` product
-           <http://source.iopen.net/groupserver/gs.content.js.jquery/>
+           <http://github.com/groupserver/gs.content.js.jquery/>
 
 .. [#page] See the ``gs.content.base`` product
-           <http://source.iopen.net/groupserver/gs.content.base/>
+           <http://github.com/groupserver/gs.content.base/>
