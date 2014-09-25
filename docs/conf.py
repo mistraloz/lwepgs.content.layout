@@ -57,10 +57,8 @@ copyright = u'2014, GroupServer.org'
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
-sys.path.append(os.path.abspath('../version.py'))
-from version import get_version
 # The full version, including alpha/beta/rc tags.
-release = get_version()
+release = '3.1.0'
 # The short X.Y version.
 version = '.'.join(release.split('.')[:2])
 
