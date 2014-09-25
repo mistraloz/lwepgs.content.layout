@@ -10,10 +10,10 @@ Contents:
    examples
    HISTORY
 
-This egg defines the standard layouts for pages on GroupServer_.
-The layouts provide slots that are filled by the pages that
-provide the content. By using these standard layouts less code is
-required to get all the pages to look consistent.
+This product defines the standard layouts for pages on
+GroupServer_.  The layouts provide slots that are filled by the
+pages that provide the content. By using these standard layouts
+less code is required to get all the pages to look consistent.
 
 Indices and tables
 ==================
@@ -22,3 +22,4 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+.. _GroupServer: http://groupserver.org/
