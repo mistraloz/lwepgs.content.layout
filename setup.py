@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-##############################################################################
+############################################################################
 #
 # Copyright © 2013, 2014 OnlineGroups.net and Contributors.
 # All Rights Reserved.
@@ -11,7 +11,7 @@
 # WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
 # FOR A PARTICULAR PURPOSE.
 #
-##############################################################################
+############################################################################
 import codecs
 import os
 from setuptools import setup, find_packages
@@ -21,11 +21,12 @@ version = get_version()
 
 with codecs.open('README.rst', encoding='utf-8') as f:
     long_description = f.read()
-with codecs.open(os.path.join("docs", "HISTORY.rst"), 
+with codecs.open(os.path.join("docs", "HISTORY.rst"),
                  encoding='utf-8') as f:
     long_description += '\n' + f.read()
 
-setup(name='gs.content.layout',
+setup(
+    name='gs.content.layout',
     version=version,
     description="Standard pay layout for  GroupServer pages.",
     long_description=long_description,
@@ -42,7 +43,7 @@ setup(name='gs.content.layout',
         "Programming Language :: Python",
         "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 2.7",
-      ],
+    ],
     keywords='zope, groupserver, page, template',
     author='Michael JasonSmith',
     author_email='mpj17@onlinegroups.net',
@@ -61,7 +62,7 @@ setup(name='gs.content.layout',
         'zope.tales',  # For what goes in the tal: and metal: attributes
         'AccessControl',  # For granting access to the message factory.
         'gs.content.css',  # For the CSS resource
-        'gs.content.js.bootstrap[zope]',  # For the Twitter Bootstrap resource
+        'gs.content.js.bootstrap[zope]',  # For the Bootstrap resource
         'gs.content.js.disclosure[zope]',  # For the disclosure resource
         'gs.content.js.jquery.base[zope]',  # For the jQuery resource
         'gs.content.js.loader[zope]',  # For the JS loader resource
