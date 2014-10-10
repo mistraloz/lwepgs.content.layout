@@ -39,7 +39,7 @@ Using the ``SiteInfo``
 ----------------------
 
 Because *most* pages have ``gs.content.base.SitePage`` [#page]_ as the base
-view-class there is always a ``siteInfo`` available to use in the ``title``
+view-class, there is always a ``siteInfo`` available to use in the ``title``
 slot and the rest of the page:
 
 .. code-block:: xml
