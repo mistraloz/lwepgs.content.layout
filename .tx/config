@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+
+[gs-content-layout.gs-content-layout-pot]
+source_file = gs/content/layout/locales/en/LC_MESSAGES/gs.content.layout.po
+file_filter = gs/content/layout/locales/<lang>/LC_MESSAGES/gs.content.layout.po
+source_lang = en
+type = PO
+
