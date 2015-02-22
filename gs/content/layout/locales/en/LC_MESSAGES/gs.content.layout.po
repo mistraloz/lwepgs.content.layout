@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.content.layout 2.0.2\n"
-"POT-Creation-Date: 2014-09-07 11:30+0000\n"
+"POT-Creation-Date: 2015-02-22 22:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Alice Murphy <ajr@posteo.de>\n"
 "Language-Team: German\n"
@@ -15,16 +15,16 @@ msgstr ""
 "Domain: gs.content.layout\n"
 
 #. Default: "Sign in"
-#: ./gs/content/layout/browser/templates/utilitylinks.pt:7
+#: ./browser/templates/utilitylinks.pt:7
 msgid "link_sign_in"
 msgstr "Sign in"
 
 #. Default: "Sign out"
-#: ./gs/content/layout/browser/templates/utilitylinks.pt:25
+#: ./browser/templates/utilitylinks.pt:25
 msgid "link_sign_out"
 msgstr "Sign out"
 
-#: ./gs/content/layout/browser/templates/utilitylinks.pt:17
+#: ./browser/templates/utilitylinks.pt:17
 msgid "link_title_view_profile"
 msgstr "View your profile"
 
