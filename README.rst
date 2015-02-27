@@ -8,7 +8,7 @@ The core page layout for GroupServer
 :Authors: `Michael JasonSmith`_,
          Richard Waid
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2014-10-10
+:Date: 2015-02-27
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
   `Creative Commons Attribution-Share Alike 4.0 International License`_
@@ -28,9 +28,14 @@ less code is required to get all the pages to look consistent.
 Resources
 =========
 
-- Documentation: http://groupserver.rtfd.org/projects/gscontentlayout/
-- Code repository: https://github.com/groupserver/gs.content.layout
-- Questions and comments to http://groupserver.org/groups/development
+- Documentation:
+  http://groupserver.rtfd.org/projects/gscontentlayout/
+- Code repository:
+  https://github.com/groupserver/gs.content.layout
+- Translations:
+  https://www.transifex.com/projects/p/gs-content-layout/
+- Questions and comments to
+  http://groupserver.org/groups/development
 - Report bugs at https://redmine.iopen.net/projects/groupserver
 
 .. _GroupServer: http://groupserver.org/

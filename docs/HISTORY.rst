@@ -1,6 +1,18 @@
 Changelog
 =========
 
+3.1.1 (2015-02-27)
+------------------
+
+* Pointing at Transifex_
+* Added a German translation (thanks, Alice_)
+* Added a French translation (thanks, `Mohamed-Younès`_)
+
+.. _Transifex:
+   https://www.transifex.com/projects/p/gs-content-layout/
+.. _Alice: http://groupserver.org/p/alice
+.. _Mohamed-Younès https://www.transifex.com/accounts/profile/MohamedZ/
+
 3.1.0 (2014-09-29)
 ------------------
 
@@ -133,3 +145,5 @@ Changelog
 ------------------
 
 * Initial import from ``gs.content.base``
+
+..  LocalWords:  Changelog Transifex
