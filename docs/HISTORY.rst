@@ -1,12 +1,13 @@
 Changelog
 =========
 
-3.1.1 (2015-02-27)
+3.1.1 (2015-03-03)
 ------------------
 
 * Pointing at Transifex_
 * Added a German translation (thanks, Alice_)
 * Added a French translation (thanks, `Mohamed-Younès`_)
+* Following the updated global CSS
 
 .. _Transifex:
    https://www.transifex.com/projects/p/gs-content-layout/
@@ -146,4 +147,4 @@ Changelog
 
 * Initial import from ``gs.content.base``
 
-..  LocalWords:  Changelog Transifex
+..  LocalWords:  Changelog Transifex Younès CSS
