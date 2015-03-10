@@ -1,6 +1,11 @@
 Changelog
 =========
 
+3.1.2 (2015-03-10)
+------------------
+
+* Following the updated global CSS
+
 3.1.1 (2015-03-03)
 ------------------
 
@@ -17,9 +22,11 @@ Changelog
 3.1.0 (2014-09-29)
 ------------------
 
-* Added the product to GitHub, renaming the ``txt`` files ``rst``
-  files
+* Added the product to GitHub_
+* Renaming the ``txt`` files ``rst`` files
 * Added Sphinx documentation
+
+.. _GitHub: https://github.com/groupserver/gs.content.layout
 
 3.0.0 (2014-09-09)
 ------------------
@@ -147,4 +154,4 @@ Changelog
 
 * Initial import from ``gs.content.base``
 
-..  LocalWords:  Changelog Transifex Younès CSS
+..  LocalWords:  Changelog Transifex Younès CSS GitHub
