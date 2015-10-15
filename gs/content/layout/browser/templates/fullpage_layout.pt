@@ -38,7 +38,7 @@
     </tal:block>
     <!-- styling typically covering all sites -->
     <link rel="stylesheet" type="text/css"
-          href="/++resource++globalstyle-20150320.css" />
+          href="/++resource++globalstyle-20151015.css" />
     <!-- styling just covering local customisations to sites -->
     <link rel="stylesheet" type="text/css"
           href="/++resource++site-20140515.css" />
