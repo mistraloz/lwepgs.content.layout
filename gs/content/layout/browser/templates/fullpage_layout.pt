@@ -36,6 +36,7 @@
     <tal:block content="structure provider:groupserver.Favicon">
       The favicon goes here.
     </tal:block>
+
     <!-- styling typically covering all sites -->
     <link rel="stylesheet" type="text/css"
           href="/++resource++globalstyle-20151015.css" />
@@ -82,7 +83,7 @@
         <metal:block define-slot="body" />
       </div><!--bodyblock-->
     </div><!--gs-content-layout-body-->
-    <div id="gs-content-layout-footer">
+    <div id="gs-content-layout-footer" role="contentinfo">
       <div id="gs-content-layout-footer-content">
         <metal:block
           define-slot="footer"
