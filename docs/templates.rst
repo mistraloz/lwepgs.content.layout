@@ -125,11 +125,11 @@ There are nine slots defined by the two layouts.
 .. _GroupServer: http://groupserver.org/
 
 .. [#css] See the ``gs.content.css`` product
-          <http://github.com/groupserver/gs.content.css/>
+          <https://github.com/groupserver/gs.content.css/>
 
-.. [#form] See the ``gs.content.form`` product
-           <http://github.com/groupserver/gs.content.form/>
+.. [#form] See the ``gs.content.form.base`` product
+           <https://github.com/groupserver/gs.content.form.base/>
 
-.. [#jquery] See the ``gs.content.js.jquery`` product
-           <http://github.com/groupserver/gs.content.js.jquery/>
+.. [#jquery] See the ``gs.content.js.jquery.base`` product
+           <https://github.com/groupserver/gs.content.js.jquery.base/>
 

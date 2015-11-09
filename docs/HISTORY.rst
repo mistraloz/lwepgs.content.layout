@@ -1,10 +1,18 @@
 Changelog
 =========
 
+3.1.7 (2015-11-09)
+------------------
+
+* Following the updated `required widgets JavaScript`_
+
+.. _required widgets JavaScript:
+   https://github.com/groupserver/gs.content.js.required
+
 3.1.6 (2015-11-06)
 ------------------
 
-* Following the updated global CSS
+* Following the updated `global CSS`_
 
 3.1.5 (2015-10-27)
 ------------------
@@ -14,17 +22,17 @@ Changelog
 3.1.4 (2015-10-15)
 ------------------
 
-* Following the updated global CSS
+* Following the updated `global CSS`_
 
 3.1.3 (2015-03-20)
 ------------------
 
-* Following the updated global CSS
+* Following the updated `global CSS`_
 
 3.1.2 (2015-03-10)
 ------------------
 
-* Following the updated global CSS
+* Following the updated `global CSS`_
 
 3.1.1 (2015-03-03)
 ------------------
@@ -32,12 +40,13 @@ Changelog
 * Pointing at Transifex_
 * Added a German translation (thanks, Alice_)
 * Added a French translation (thanks, `Mohamed-Younès`_)
-* Following the updated global CSS
+* Following the updated `global CSS`_
 
 .. _Transifex:
-   https://www.transifex.com/projects/p/gs-content-layout/
+   https://www.transifex.com/groupserver/gs-content-layout/
 .. _Alice: http://groupserver.org/p/alice
-.. _Mohamed-Younès https://www.transifex.com/accounts/profile/MohamedZ/
+.. _Mohamed-Younès:
+   https://www.transifex.com/user/profile/MohamedZ/
 
 3.1.0 (2014-09-29)
 ------------------
@@ -94,28 +103,28 @@ Changelog
 2.3.5 (2014-02-17)
 ------------------
 
-* Following the new CSS version
+* Following the updated `global CSS`_
 
 2.3.4 (2014-01-30
 ------------------
 
-* Following the new CSS version
+* Following the updated `global CSS`_
 * Explicitly not deferring the loading of the JavaScript loader
 
 2.3.3 (2013-11-26)
 ------------------
 
-* Following the new CSS version
+* Following the updated `global CSS`_
 
 2.3.2 (2013-11-20)
 ------------------
 
-* Following the new CSS version
+* Following the updated `global CSS`_
 
 2.3.1 (2013-11-05)
 ------------------
 
-* Following the new CSS version
+* Following the updated `global CSS`_
 
 2.3.0 (2013-10-17)
 ------------------
@@ -174,4 +183,5 @@ Changelog
 
 * Initial import from ``gs.content.base``
 
+.. _global CSS: https://github.com/groupserver/gs.content.css
 ..  LocalWords:  Changelog Transifex Younès CSS GitHub
