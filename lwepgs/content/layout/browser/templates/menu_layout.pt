@@ -85,19 +85,6 @@
 <!-- /subnav -->
 
 
-
-
-    <div id="toparea" role="banner">
-      <div id="titlebar">
-        <a id="titlebar-home-link" href="/"><span class="logo">&#160;</span>
-        <span class="site" tal:content="siteName">Site Name</span> Forum</a>
-        <tal:block
-          metal:define-slot="utilitylinks"
-          content="structure provider:groupserver.UtilityLinks">
-          The utility links go here.
-        </tal:block>
-      </div><!--titlebar-->
-    </div><!--toparea-->
     <div id="bodyblock">
       <div id="gs-content-layout-menu" role="navigation">
         <metal:block define-slot="contextnavigation"
