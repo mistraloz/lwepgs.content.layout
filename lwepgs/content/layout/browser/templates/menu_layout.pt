@@ -52,7 +52,7 @@
   <body tal:define="siteName view/siteInfo/name | nothing;
                     u string:unknown;
                     p request/URLPATH1 | u;"
-    tal:attributes="id python:'page-%s' % p.strip('/').replace('/','_');">
+    tal:attributes="id python:'page-%s' % p.strip('/').replace('/','_');" class="skin-tweeki tweeki-animateLayout">
 
 <div id="mw-navigation" class="navbar navbar-default" role="navigation">
   <h2>Menu de navigation</h2>
