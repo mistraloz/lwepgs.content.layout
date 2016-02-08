@@ -44,6 +44,7 @@
     <link rel="stylesheet" type="text/css"
           href="/++resource++site-20151027.css" />
     <metal:block define-slot="style" />
+    <link rel="shortcut icon" href="http://www.reboot-camp.ovh/favicon.ico" />
   </head>
   <body tal:define="siteName view/siteInfo/name | nothing;
                     u string:unknown;
