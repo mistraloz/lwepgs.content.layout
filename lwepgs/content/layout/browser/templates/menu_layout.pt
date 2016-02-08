@@ -2,7 +2,7 @@
   xmlns:tal="http://xml.zope.org/namespaces/tal"
   xmlns:metal="http://xml.zope.org/namespaces/metal"
   xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-  i18n:domain="lwepgs.content.layout"
+  i18n:domain="gs.content.layout"
   define-macro="page"><tal:doctype replace="structure string:&lt;!DOCTYPE html&gt;" />
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       tal:define="ap view/request/AUTHENTICATION_PATH | nothing;
