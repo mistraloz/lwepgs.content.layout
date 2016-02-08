@@ -57,6 +57,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
+	'lwep.skin.base',
         'gs.content.layout', # Parent (héritage)
         'zope.browserpage',  # For the <browser:page config.
         'zope.browserresource',  # For the <browser:resource config.
