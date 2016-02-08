@@ -8,13 +8,13 @@
   <browser:page
     name="groupserver_layout"
     for="*"
-    layer="lwep.skin.base.interfaces.IGSLWEPLayer"
+    layer="lwepgs.skin.base.interfaces.IGSLWEPLayer"
     template="browser/templates/fullpage_layout.pt"
     permission="zope.Public" />
   <browser:page
     name="groupserver_menu_layout"
     for="*"
-    layer="lwep.skin.base.interfaces.IGSLWEPLayer"
+    layer="lwepgs.skin.base.interfaces.IGSLWEPLayer"
     template="browser/templates/menu_layout.pt"
     permission="zope.Public" />
 
@@ -22,13 +22,13 @@
   <browser:page
     name="groupserver_site_home_layout"
     for="*"
-    layer="lwep.skin.base.interfaces.IGSLWEPLayer"
+    layer="lwepgs.skin.base.interfaces.IGSLWEPLayer"
     template="browser/templates/fullpage_layout.pt"
     permission="zope.Public" />
   <browser:page
     name="groupserver_full_layout"
     for="*"
-    layer="lwep.skin.base.interfaces.IGSLWEPLayer"
+    layer="lwepgs.skin.base.interfaces.IGSLWEPLayer"
     template="browser/templates/fullpage_layout.pt"
     permission="zope.Public" />
 
