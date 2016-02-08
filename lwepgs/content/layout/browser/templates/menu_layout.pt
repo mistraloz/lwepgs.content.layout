@@ -37,6 +37,10 @@
       The favicon goes here.
     </tal:block>
 
+    <link rel="stylesheet" type="text/css"
+          href="http://www.reboot-camp.ovh/skins/Tweeki/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css"
+          href="http://www.reboot-camp.ovh/skins/Tweeki/bootstrap/css/bootstrap-theme.min.css" />
     <!-- styling typically covering all sites -->
     <link rel="stylesheet" type="text/css"
           href="/++resource++globalstyle-20151112.css" />
