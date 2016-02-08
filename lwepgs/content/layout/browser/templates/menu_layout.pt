@@ -49,10 +49,48 @@
                     u string:unknown;
                     p request/URLPATH1 | u;"
     tal:attributes="id python:'page-%s' % p.strip('/').replace('/','_');">
+
+<div id="mw-navigation" class="navbar navbar-default" role="navigation">
+  <h2>Menu de navigation</h2>
+  <div id="mw-head" class="navbar-inner">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="http://www.reboot-camp.ovh/Accueil" class="navbar-brand">Reboot Camp</a>         
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <tal:block
+          metal:define-slot="utilitylinks"
+          content="structure provider:groupserver.UtilityLinks">
+          The utility links go here.
+        </tal:block>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- /navbar -->
+<!-- subnav -->
+<div id="page-header" class="row">
+  <div class="col-md-offset-0 col-md-9">
+    <ul class="navigation nav nav-pills pull-left">
+    <li class="nav btn-group"><a href="http://www.reboot-camp.ovh/Pr%C3%A9sentation_du_Reboot" id="n-Pr.C3.A9sentation-du-Reboot">Présentation du Reboot</a></li><li class="nav btn-group"><a href="http://www.reboot-camp.ovh/La_charte" id="n-La-charte">La charte</a></li><li class="nav btn-group active"><a href="/" id="n-http:.2F.2Flists.reboot-camp.ovh" rel="nofollow" active="1">Forum</a></li><li class="nav btn-group"><a href="http://www.reboot-camp.ovh/Synth%C3%A8ses" id="n-Synth.C3.A8ses">Synthèses</a></li><li class="nav btn-group"><a href="/Groupes" id="n-Groupes">Groupes</a></li><li class="nav btn-group"><a href="http://www.reboot-camp.ovh/Documentation" id="n-Documentation">Documentation</a></li>         </ul>
+  </div>
+</div>
+<!-- /subnav -->
+
+
+
+
     <div id="toparea" role="banner">
       <div id="titlebar">
         <a id="titlebar-home-link" href="/"><span class="logo">&#160;</span>
-        <span class="site" tal:content="siteName">Site Name</span> TEST2</a>
+        <span class="site" tal:content="siteName">Site Name</span> Forum</a>
         <tal:block
           metal:define-slot="utilitylinks"
           content="structure provider:groupserver.UtilityLinks">

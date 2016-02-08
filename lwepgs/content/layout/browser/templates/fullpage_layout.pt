@@ -52,7 +52,7 @@
     <div id="toparea" role="banner">
       <div id="titlebar">
         <a id="titlebar-home-link" href="/"><span class="logo"> </span>
-        <span class="site" tal:content="siteName">Site Name</span> TEST</a>
+        <span class="site" tal:content="siteName">Site Name</span> Forum</a>
         <tal:block
           metal:define-slot="utilitylinks"
           content="structure provider:groupserver.UtilityLinks">
