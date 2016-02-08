@@ -57,6 +57,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
+        'gs.content.layout', # Parent (héritage)
         'zope.browserpage',  # For the <browser:page config.
         'zope.browserresource',  # For the <browser:resource config.
         'zope.i18nmessageid',  # For the i18n

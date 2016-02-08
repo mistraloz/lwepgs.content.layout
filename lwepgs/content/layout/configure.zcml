@@ -40,32 +40,6 @@
     template="browser/templates/fullpage_layout.pt"
     permission="zope.Public" />
 
-  <!-- The utility links -->
-  <browser:viewletManager
-    name="groupserver.UtilityLinks"
-    for="*"
-    provides=".interfaces.IUtilityLinks"
-    class="gs.viewlet.manager.WeightOrderedViewletManager"
-    template="browser/templates/simplemanager.pt"
-    permission="zope2.Public" />
-  <browser:viewlet
-    name="gs-content-layout-utilitylinks"
-    manager=".interfaces.IUtilityLinks"
-    class="gs.viewlet.SiteViewlet"
-    template="browser/templates/utilitylinks.pt"
-    permission="zope2.Public"
-    weight="10"
-    title="Utility Links" />
-
-  <!-- The favicons. Note the plural. -->
-  <browser:viewletManager
-    name="groupserver.Favicon"
-    for="*"
-    provides=".interfaces.IFavicon"
-    class="gs.viewlet.manager.WeightOrderedViewletManager"
-    template="browser/templates/simplemanager.pt"
-    permission="zope2.Public" />
-
   <i18n:registerTranslations directory="locales" />
 
 </configure>
