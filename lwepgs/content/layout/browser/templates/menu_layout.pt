@@ -37,10 +37,6 @@
       The favicon goes here.
     </tal:block>
 
-    <link rel="stylesheet" type="text/css"
-          href="http://www.reboot-camp.ovh/skins/Tweeki/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css"
-          href="http://www.reboot-camp.ovh/skins/Tweeki/bootstrap/css/bootstrap-theme.min.css" />
     <!-- styling typically covering all sites -->
     <link rel="stylesheet" type="text/css"
           href="/++resource++globalstyle-20151112.css" />
@@ -48,49 +44,21 @@
     <link rel="stylesheet" type="text/css"
           href="/++resource++site-20151027.css" />
     <metal:block define-slot="style" />
-
-          
-    <script type="text/javascript" src="http://www.reboot-camp.ovh/skins/Tweeki/bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body tal:define="siteName view/siteInfo/name | nothing;
                     u string:unknown;
                     p request/URLPATH1 | u;"
     tal:attributes="id python:'page-%s' % p.strip('/').replace('/','_');" class="skin-tweeki tweeki-animateLayout">
 
-<div id="mw-navigation" class="navbar navbar-default" role="navigation">
-  <h2>Menu de navigation</h2>
-  <div id="mw-head" class="navbar-inner">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="http://www.reboot-camp.ovh/Accueil" class="navbar-brand">Reboot Camp</a>         
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <tal:block
-          metal:define-slot="utilitylinks"
-          content="structure provider:groupserver.UtilityLinks">
-          The utility links go here.
-        </tal:block>
-      </div>
-      
-    </div>
-  </div>
-</div>
-<!-- /navbar -->
-<!-- subnav -->
-<div id="page-header" class="row">
-  <div class="col-md-offset-0 col-md-9">
-    <ul class="navigation nav nav-pills pull-left">
-    <li class="nav btn-group"><a href="http://www.reboot-camp.ovh/Pr%C3%A9sentation_du_Reboot" id="n-Pr.C3.A9sentation-du-Reboot">Présentation du Reboot</a></li><li class="nav btn-group"><a href="http://www.reboot-camp.ovh/La_charte" id="n-La-charte">La charte</a></li><li class="nav btn-group active"><a href="/" id="n-http:.2F.2Flists.reboot-camp.ovh" rel="nofollow" active="1">Forum</a></li><li class="nav btn-group"><a href="http://www.reboot-camp.ovh/Synth%C3%A8ses" id="n-Synth.C3.A8ses">Synthèses</a></li><li class="nav btn-group"><a href="/Groupes" id="n-Groupes">Groupes</a></li><li class="nav btn-group"><a href="http://www.reboot-camp.ovh/Documentation" id="n-Documentation">Documentation</a></li>         </ul>
-  </div>
-</div>
-<!-- /subnav -->
+<iframe src="http://www.reboot-camp.ovh/#header.php" width="100%" height="100px"></iframe>
 
+<div id="tools">
+<tal:block
+  metal:define-slot="utilitylinks"
+  content="structure provider:groupserver.UtilityLinks">
+  The utility links go here.
+</tal:block>
+</div>
 
     <div id="bodyblock">
       <div id="gs-content-layout-menu" role="navigation">
