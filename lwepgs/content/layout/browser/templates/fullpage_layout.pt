@@ -2,7 +2,7 @@
   xmlns:tal="http://xml.zope.org/namespaces/tal"
   xmlns:metal="http://xml.zope.org/namespaces/metal"
   xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-  i18n:domain="gs.content.layout"
+  i18n:domain="lwepgs.content.layout"
   define-macro="page"><tal:doctype replace="structure string:&lt;!DOCTYPE html&gt;" />
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       tal:define="ap view/request/AUTHENTICATION_PATH | nothing;
@@ -21,14 +21,14 @@
 
     <metal:block define-slot="title" />
 
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <tal:block  metal:define-slot="metadata-global"
       tal:condition="python:hasattr(context, 'metadata.xml')"
       tal:replace="structure python:getattr(context, 'metadata.xml')()">
       &#160;
     </tal:block>
 
-   <link rel="home" href="/"
+    <link rel="home" href="/"
       tal:attributes="title string:${view/siteInfo/name} Home;"/>
     <link rel="help" href="/help"
       tal:attributes="title string:${view/siteInfo/name} Help;"/>
@@ -51,8 +51,8 @@
     tal:attributes="id python:'page-%s' % p.strip('/').replace('/','_');">
     <div id="toparea" role="banner">
       <div id="titlebar">
-        <a id="titlebar-home-link" href="/"><span class="logo">&#160;</span>
-        <span class="site" tal:content="siteName">Site Name</span></a>
+        <a id="titlebar-home-link" href="/"><span class="logo"> </span>
+        <span class="site" tal:content="siteName">Site Name</span> TEST</a>
         <tal:block
           metal:define-slot="utilitylinks"
           content="structure provider:groupserver.UtilityLinks">
@@ -60,19 +60,16 @@
         </tal:block>
       </div><!--titlebar-->
     </div><!--toparea-->
-    <div id="bodyblock">
-      <div id="gs-content-layout-menu" role="navigation">
-        <metal:block define-slot="contextnavigation"
-                     tal:content="structure python:getattr(context, 'contextmenu.xml', getattr(context, 'contextmenu', getattr(context.Templates.output, 'contextmenu.xml')))(method='html')"> </metal:block>
-      </div><!--gs-content-layout-menu-->
-      <div id="gs-content-layout-menu-after">
-        <metal:block define-slot="messages"> </metal:block>
+    <div id="gs-content-layout-body">
+      <div id="bodyblock">
         <div id="breadcrumbs" class="muted small" role="navigation">
           <metal:block define-slot="breadcrumb"> </metal:block>
         </div><!--breadcrumbs-->
+        <metal:block define-slot="messages"> </metal:block><!--messages-->
+        <metal:block metal:define-slot="pagetitle"/>
         <div id="notifications" metal:define-slot="notifications"
-          tal:define="notifications context/notifications | nothing"
-          tal:condition="notifications">
+             tal:define="notifications context/notifications | nothing"
+             tal:condition="notifications">
           <tal:block
             repeat="notification python:notifications.objectValues()">
             <p tal:replace="structure python:notification(method='html')">
@@ -83,9 +80,8 @@
             </p>
           </tal:block>
         </div><!--notifications-->
-        <metal:block define-slot="pagetitle"> </metal:block>
-        <metal:block define-slot="body">&#160;</metal:block>
-      </div><!--content-->
+        <metal:block define-slot="body" />
+      </div><!--bodyblock-->
     </div><!--gs-content-layout-body-->
     <div id="gs-content-layout-footer" role="contentinfo">
       <div id="gs-content-layout-footer-content">
@@ -97,7 +93,7 @@
     <script type="text/javascript"
             src="/++resource++gs-content-js-loader-min-20140313.js"> </script>
     <script type="text/javascript"
-+            src="/++resource++jquery-1.9.1.min.js"> </script>
+            src="/++resource++jquery-1.9.1.min.js"> </script>
     <script type="text/javascript" defer="defer"
             src="/++resource++bootstrap-2.3.2/js/bootstrap.min.js"> </script>
     <metal:block define-slot="javascript" />

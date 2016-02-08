@@ -17,7 +17,7 @@ import os
 from setuptools import setup, find_packages
 from version import get_version
 
-name = 'gs.content.layout'
+name = 'lwepgs.content.layout'
 version = get_version()
 
 with codecs.open('README.rst', encoding='utf-8') as f:
@@ -48,7 +48,7 @@ setup(
     keywords='zope, groupserver, page, template',
     author='Michael JasonSmith',
     author_email='mpj17@onlinegroups.net',
-    url='https://github.com/groupserver/{0}'.format(name),
+    url='https://github.com/mistraloz/{0}'.format(name),
     license='ZPL 2.1',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['.'.join(name.split('.')[:i])

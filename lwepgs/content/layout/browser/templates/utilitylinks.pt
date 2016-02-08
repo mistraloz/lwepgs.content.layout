@@ -2,7 +2,7 @@
     class="dotted-inline-list"
     tal:define="userId user/getId;"
     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-    i18n:domain="gs.content.layout">
+    i18n:domain="lwepgs.content.layout">
   <li id="utilitylinks-log-in" tal:condition="not:userId">
     <a id="utilitylinks-log-in-link" href="/login.html"
        class="btn btn-small" data-icon="&#x1f512;"
