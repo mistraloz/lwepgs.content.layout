@@ -48,6 +48,9 @@
     <link rel="stylesheet" type="text/css"
           href="/++resource++site-20151027.css" />
     <metal:block define-slot="style" />
+
+          
+    <script type="text/javascript" src="http://www.reboot-camp.ovh/skins/Tweeki/bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body tal:define="siteName view/siteInfo/name | nothing;
                     u string:unknown;
