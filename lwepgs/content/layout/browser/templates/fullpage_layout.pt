@@ -49,19 +49,16 @@
                     u string:unknown;
                     p request/URLPATH1 | u;"
     tal:attributes="id python:'page-%s' % p.strip('/').replace('/','_');">
-    <div id="toparea" role="banner">
-      <div id="titlebar">
-        <a id="titlebar-home-link" href="/"><span class="logo"> </span>
-        <span class="site" tal:content="siteName">Site Name</span> Forum</a>
-        <tal:block
+
+    <iframe src="http://www.reboot-camp.ovh/header.php?from=forum" width="100%" height="120px" style="border:0 none;overflow:hidden;"></iframe>
+
+    <div id="gs-content-layout-body">
+      <div id="bodyblock">
+        <div id="tools"><tal:block
           metal:define-slot="utilitylinks"
           content="structure provider:groupserver.UtilityLinks">
           The utility links go here.
-        </tal:block>
-      </div><!--titlebar-->
-    </div><!--toparea-->
-    <div id="gs-content-layout-body">
-      <div id="bodyblock">
+        </tal:block></div>
         <div id="breadcrumbs" class="muted small" role="navigation">
           <metal:block define-slot="breadcrumb"> </metal:block>
         </div><!--breadcrumbs-->
